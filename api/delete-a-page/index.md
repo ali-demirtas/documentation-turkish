@@ -1,19 +1,20 @@
-# Title: Delete a page
+# Title: Bir sayfayı sil
 <!-- Position: 6 -->
 ---
-Bludit API provides the features to edit a page.
+Bludit API bir sayfayı düzenlemek için özellikler sağlar.
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+API'ye yönelik tüm talepler `API Token` ihtiyaç duyar, eklentiyi eklentinin ayarlarında bulabilirsiniz.
 
-All request to the API to write content is necessary to provide an `Authorization Token`.
-This token is only available on users with the role **ADMINISTRATOR**. You can get the `Authorization Token` on **Admin panel > Manage > Users > {Username} > Edit User > Authentication Token > Token**.
+API'nın içerik yazma isteğinin tamamı bir `Authorization Token` sağlamak için gereklidir.
+**ADMINISTRATOR** rolüne sahip bir kullanıcıya ihtiyacınız var. `Authorization Token` burada bulunur: **Yönetici paneli > Yönet > Kullanıcılar > {Username} > Kullanıcıyı düzenle > Authentication Token > Token**.
 
-<h2 id="request">Request</h2>
 
-- Endpoint: `/api/pages/<key>`
-- Method: `DELETE`
-- Content-Type: `application/json`
-- Content
+<h2 id="request">İstek</h2>
+
+- Son nokta: `/api/pages/<key>`
+- Yöntem: `DELETE`
+- İçerik Türü: `application/json`
+- İçerik
 
 ```
 {
@@ -22,15 +23,15 @@ This token is only available on users with the role **ADMINISTRATOR**. You can g
 }
 ```
 
-<h2 id="response">Response</h2>
+<h2 id="response">Yanıt</h2>
 
-- HTTP Code: `200`
-- Content-Type: `application/json`
-- Content
+- HTTP Kodu: `200`
+- İçerik Türü: `application/json`
+- İçerik
 
 ```
 {
 	"status": "0",
-	"message": "Page deleted."
+	"message": "Sayfa silindi."
 }
 ```
