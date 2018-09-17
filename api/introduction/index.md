@@ -1,51 +1,51 @@
-# Title: API Introduction
+# Başlık: API Giriş
 <!-- Position: 1 -->
 ---
-The Bludit API (Application Programming Interface) is a plugin to provide an easy integration with Bludit. With this plugin, you can retrieve or update data from the database with just an HTTP request.
+Bludit API (Uygulama Programlama Arayüzü), Bludit ile kolay entegrasyon sağlamak için bir eklentidir. Bu eklentiyle, yalnızca bir HTTP isteği ile veri tabanından veri alabilir veya güncelleyebilirsiniz.
 
-<h2 id="installation">Installation</h2>
-Bludit comes with the plugin API pre-installed, you only need to activate it.
+<h2 id="installation">Kurulum</h2>
+Bludit önceden yüklenmiş eklenti API ile birlikte gelir, sadece onu etkinleştirmeniz gerekir.
 
-Go to **Admin panel > Plugins > API > Activate**.
+Go to **Yönetici paneli > Eklentiler > API > Etkinleştir**.
 
 <h2 id="url">URL</h2>
-The URL of the API is:
+API'nin URL'si:
 
 ```
 {protocol}://{domain}/api/{endpoint}
 ````
 
-Example:
+Örnek:
 
 ```
 https://example.com/api/pages
 ```
 
-<h2 id="endpoints">Endpoints and Methods</h2>
+<h2 id="endpoints">Son Noktalar ve Yöntemler</h2>
 
-Endpoint		  | Method 	| Description
+Son nokta		  | Yöntem 	| Açıklama
 --------------|---------|-----------------------------------------------|
-/pages 			  | GET 		| Returns an array with a list of pages		|
-/pages/{key}	| GET		  | Returns a page, filtered by the page key	|
-/pages			  | POST		| Create a new page				|
-/pages/{key}  | PUT		  | Edit a page				|
-/pages/{key}  | DELETE	| Delete a page				|
+/pages 			  | GET 		| Sayfaların bir listesini içeren bir dizi döndürür		|
+/pages/{key}	| GET		  | Sayfa anahtarıyla filtrelenen bir sayfa döndürür	|
+/pages			  | POST		| Yeni sayfa oluştur				|
+/pages/{key}  | PUT		  | Bir sayfayı düzenle			|
+/pages/{key}  | DELETE	| Bir sayfayı sil				|
 
-<h2 id="inputs">Methods Inputs</h2>
+<h2 id="inputs">Yöntem Girdileri</h2>
 
-Key             | Type 		| Description
+Anahtar         | Tür 		| Açıklama
 ----------------|---------|-----------------------------------------------|
-token 		      | string 	| API token					|
-authentication	| string	| Authentication user token			|
-limit		        | integer	| A number for limit the pages returned  		|
+token 		      | string 	| API belirteci					|
+authentication	| string	| Kimlik doğrulama kullanıcı belirteci		|
+limit		        | integer	| Döndürülecek sayfaları sınırlamak için bir numara  		|
 
-<h2 id="http-response">HTTP Response</h2>
+<h2 id="http-response">HTTP Yanıt</h2>
 
-The response format is `JSON`, here is a list of keys from the JSON object.
+Yanıt biçimi `JSON` şeklindedir, JSON nesnesinden bir anahtar listesi.
 
-| Key 		| Type 		| Description 					|
+| Anahtar	| Tür 		| Açıklama 					|
 ----------|---------|-----------------------------------------------|
-| message	| string	| Returns a little message about the execution	|
-| data 		| array		| The content of the response for the endpoint	|
+| message	| string	| Yürütme hakkında küçük bir mesaj döndürür	|
+| data 		| array		| Son nokta için yanıtın içeriği	|
 
-You can check the HTTP Code for different responses.
+Farklı yanıtlar için HTTP Kodunu kontrol edebilirsiniz.
