@@ -1,4 +1,4 @@
-# Title: Bir sayfa oluştur
+# Başlık: Bir sayfa oluştur
 <!-- Position: 4 -->
 ---
 Bludit API, yeni bir sayfa oluşturmak için özellikler sağlar.
