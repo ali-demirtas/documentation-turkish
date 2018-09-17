@@ -1,32 +1,32 @@
-# Title: Request a list of pages
+# Başlık: Sayfa listesi isteme
 <!-- Position: 2 -->
 ---
-Bludit API provides the feature to request a particular list of pages.
+Bludit API, belirli bir sayfa listesi istemek için özellik sağlar.
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+API'nin tüm isteği `API Token` ihtiyaç duyar, eklenti ayarlarında belirteci bulabilirsiniz.
 
-<h2 id="request">Request</h2>
+<h2 id="request">İstek</h2>
 
-- Endpoint: `/api/pages`
-- Method: `GET`
-- Parameters: `token`
+- Son nokta: `/api/pages`
+- Yöntem: `GET`
+- Parametreler: `token`
 
-<h2 id="response">Response</h2>
+<h2 id="response">Yanıt</h2>
 
-- HTTP Code: `200`
-- Content-Type: `application/json`
-- Content
+- HTTP Kodu: `200`
+- İçerik Türü: `application/json`
+- İçerik
 
 ```
 {
 	"status": "0",
-	"message": "List of pages, amount of items: 15",
+	"message": "Sayfaların listesi, öge miktarı: 15",
 	"data": [
 		{
 			"key": "the-dog",
-			"title": "The Dog",
-			"content": "Content of the page",
-			"description": "Description of the page",
+			"title": "Köpek",
+			"content": "Sayfanın içeriği",
+			"description": "Sayfanın açıklaması",
 			"date": "2017-08-24 22:00:00",
 			"permalink": "http:\/\/example.com\/the-dog"
 		},
@@ -37,8 +37,8 @@ All request to the API need the `API Token`, you can find the token in the setti
 }
 ```
 
-<h2 id="curl-example">CURL command example</h2>
-Here is an example of a request made via the command line with the command curl.
+<h2 id="curl-example">CURL komut örneği</h2>
+Komut satırı üzerinden komut istemiyle yapılan bir isteğin bir örneği.
 
 ```
 $ curl -vvv \
@@ -63,13 +63,13 @@ $ curl -vvv \
 
 {
         "status": "0",
-        "message": "List of pages, amount of items: 15",
+        "message": "Sayfaların listesi, öge miktarı: 15",
         "data": [
 		{
                         "key": "the-dog",
-                        "title": "The Dog",
-                        "content": "Content of the page",
-                        "description": "Description of the page",
+                        "title": "Köpek",
+                        "content": "Sayfanın içeriği",
+                        "description": "Sayfanın açıklaması",
                         "date": "2017-08-24 22:00:00",
                         "permalink": "http:\/\/example.com\/the-dog"
                 },
@@ -80,8 +80,8 @@ $ curl -vvv \
 }
 ```
 
-<h2 id="ajax-example">Javascript: AJAX with jQuery</h2>
-Example of AJAX request with the Javascript library [jQuery](https://api.jquery.com/jQuery.ajax/).
+<h2 id="ajax-example">Javascript: jQuery ile AJAX</h2>
+Javascript kütüphanesi ile AJAX talebi örneği [jQuery](https://api.jquery.com/jQuery.ajax/).
 
 ```
 $.ajax({
@@ -96,6 +96,6 @@ $.ajax({
 ```
 
 <div class="note">
-<div class="title">Download</div>
-Download the source code of the example in <a href="https://github.com/bludit/examples/tree/master/api/ajax-request-list-of-pages">jQuery</a>.
+<div class="title">İndir</div>
+Örnekte kaynak kodunu <a href="https://github.com/bludit/examples/tree/master/api/ajax-request-list-of-pages">jQuery</a> olarak indir.
 </div>
