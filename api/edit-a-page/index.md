@@ -1,4 +1,4 @@
-# Başlık: Bir sayfa düzenle
+# Title: Bir sayfa düzenle
 <!-- Position: 5 -->
 ---
 Bludit API, yeni bir sayfayı düzenlemek için özellikler sağlar.
