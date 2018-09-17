@@ -1,18 +1,18 @@
-# Title: Edit a page
+# Başlık: Bir sayfa düzenle
 <!-- Position: 5 -->
 ---
-Bludit API provides the features to edit a page.
+Bludit API, yeni bir sayfayı düzenlemek için özellikler sağlar.
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+API'ye yönelik tüm talepler `API Token` ihtiyaç duyar, eklentiyi eklentinin ayarlarında bulabilirsiniz.
 
-All request to the API to write content is necessary to provide an `Authorization Token`. To get this kind of token you need a user with **ADMINISTRATOR** role. You can get the `Authorization Token` on **Admin panel > Manage > Users > {Username} > Edit User > Authentication Token > Token**.
+API'nın içerik yazma isteğinin tamamı bir `Authorization Token` sağlamak için gereklidir. Bu tür bir jetonu almak için **ADMINISTRATOR** rolüne sahip bir kullanıcıya ihtiyacınız var. `Authorization Token` burada bulunur: **Yönetici paneli > Yönet > Kullanıcılar > {Username} > Kullanıcıyı düzenle > Authentication Token > Token**.
 
-<h2 id="request">Request</h2>
+<h2 id="request">İstek</h2>
 
-- Endpoint: `/api/pages/{key}`
-- Method: `PUT`
-- Content-Type: `application/json`
-- Content
+- Son nokta: `/api/pages/{key}`
+- Yöntem: `PUT`
+- İçerik Türü: `application/json`
+- İçerik
 
 ```
 {
@@ -23,16 +23,16 @@ All request to the API to write content is necessary to provide an `Authorizatio
 }
 ```
 
-<h2 id="response">Response</h2>
+<h2 id="response">Yanıt</h2>
 
-- HTTP Code: `200`
-- Content-Type: `application/json`
-- Content
+- HTTP Kodu: `200`
+- İçerik Türü: `application/json`
+- İçerik
 
 ```
 {
 	"status": "0",
-	"message": "Page edited.",
+	"message": "Sayfa düzenlendi.",
 	"data": {
 		"key": "my-dog"
 	}
