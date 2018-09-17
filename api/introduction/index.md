@@ -1,4 +1,4 @@
-# Başlık: API Giriş
+# Title: API Giriş
 <!-- Position: 1 -->
 ---
 Bludit API (Uygulama Programlama Arayüzü), Bludit ile kolay entegrasyon sağlamak için bir eklentidir. Bu eklentiyle, yalnızca bir HTTP isteği ile veri tabanından veri alabilir veya güncelleyebilirsiniz.
