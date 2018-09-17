@@ -3,32 +3,32 @@
 ---
 Tüm örnekler, Nginx Web Sunucusu ile kutu yüklemesinin dışında. Diğer dağıtımlar için adımlarınız varsa, bunu [forum](https://forum.bludit.org) üzerinde yayınlayabilir ya da sadece bu sayfayı Github'da düzenleyin, sayfanın sonunda bağlantı ile bir düğme bulabilirsiniz.
 
-### Content
-1. [Installation on Ubuntu 16.04](#ubuntu)
-2. [Installation on Centos 7 / RedHat 7](#centos)
+### İçerik
+1. [Ubuntu 16.04 üzerinde kurulum](#ubuntu)
+2. [Centos 7 / RedHat 7 üzerinde kurulum](#centos)
 
 ---
 
-## <a id="ubuntu"></a> Installation on Ubuntu 16.04 LTS
+## <a id="ubuntu"></a> Ubuntu 16.04 LTS üzerinde kurulum
 
-Considerations:
-- PHP-FPM is running under the username `www-data`.
+Hususlar:
+- PHP-FPM, `www-data` kullanıcı adı altında çalışıyor.
 - PHP-FPM is listen on Unix socket on `unix:/run/php/php7.0-fpm.sock`.
 - Nginx is running under the username `www-data`.
 - You don't have installed any other webserver.
 - This is a basic configuration, considere read more for production environments.
 
-Install Nginx Webserver, PHP and some tools.
+Nginx Web sunucusu, PHP ve bazı araçları yükleyin.
 ```
 $ sudo apt install -y nginx php-fpm php-dom php-mbstring php-cli php-gd php-opcache unzip wget
 ```
 
-Configure Nginx.
+Nginx yapılandırın.
 ```
 $ sudo rm -f /etc/nginx/sites-enabled/*
 ```
 
-Add a new file with the virtual server block in `/etc/nginx/conf.d/bludit.conf`
+Sanal sunucu bloğu ile yeni bir dosya ekle `/etc/nginx/conf.d/bludit.conf`
 ```
 server {
 	listen 80;
@@ -47,7 +47,7 @@ server {
 }
 ```
 
-Download the latest version of Bludit and uncompress it.
+Bludit'in son sürümünü indirin ve genişletin.
 ```
 $ mkdir /www
 $ cd /www
@@ -56,13 +56,13 @@ $ unzip bludit_latest.zip
 $ sudo chown -R www-data:www-data /www
 ```
 
-Restart the services to load the new configurations.
+Yeni yapılandırmaları yüklemek için hizmetleri yeniden başlatın.
 ```
 $ sudo service php7.0-fpm restart
 $ sudo service nginx restart
 ```
 
-Open your browser and navigate to http://localhost, finish with the installation.
+Tarayıcınızı açın ve http://localhost adresine gidin, yükleme işlemini tamamlayın.
 
 ---
 
