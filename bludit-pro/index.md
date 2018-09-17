@@ -1,8 +1,8 @@
 # Title: Bludit PRO
 <!-- Position: 100 -->
 ---
-## What is Bludit PRO?
-Bludit PRO is Bludit with extra remarkable plugins. Bludit PRO doesn't have to be purchased nor requires any special licensing to use it.
+## Bludit PRO nedir?
+Bludit PRO, ekstra dikkat çekici eklentilerle Bludit. Bludit PRO'nun satın alınması ya da kullanılması için özel bir lisans gerekmez.
 
 Bludit PRO is available for Backers and Sponsors from Patreon. Donations and community support are what helps the project stay up and running. Support Bludit via Patreon today and enjoy all the great features of Bludit plus more with Bludit PRO!
 
