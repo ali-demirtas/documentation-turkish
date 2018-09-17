@@ -1,7 +1,7 @@
-# Title: Installation on GNU/Linux
+# Title: GNU/Linux üzerine Kurulum
 <!-- Position: 5 -->
 ---
-All examples are out of the box installation, with Nginx Webserver. If you have the steps for other distributions, you can publish it on the [forum](https://forum.bludit.org) or just edit this page on Github, you can find a button at the end of the page with the link.
+Tüm örnekler, Nginx Web Sunucusu ile kutu yüklemesinin dışında. Diğer dağıtımlar için adımlarınız varsa, bunu [forum](https://forum.bludit.org) üzerinde yayınlayabilir ya da sadece bu sayfayı Github'da düzenleyin, sayfanın sonunda bağlantı ile bir düğme bulabilirsiniz.
 
 ### Content
 1. [Installation on Ubuntu 16.04](#ubuntu)
