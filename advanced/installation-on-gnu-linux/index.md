@@ -13,10 +13,10 @@ Tüm örnekler, Nginx Web Sunucusu ile kutu yüklemesinin dışında. Diğer da�
 
 Hususlar:
 - PHP-FPM, `www-data` kullanıcı adı altında çalışıyor.
-- PHP-FPM is listen on Unix socket on `unix:/run/php/php7.0-fpm.sock`.
-- Nginx is running under the username `www-data`.
-- You don't have installed any other webserver.
-- This is a basic configuration, considere read more for production environments.
+- PHP-FPM, `unix:/run/php/php7.0-fpm.sock` üzerinde Unix soketinde dinliyor.
+- Nginx, `www-data` kullanıcı adı altında çalışıyor.
+- Başka bir web sunucusu yüklemediniz.
+- Bu, üretim ortamları için daha fazla okuyan temel bir yapılandırmadır.
 
 Nginx Web sunucusu, PHP ve bazı araçları yükleyin.
 ```
@@ -66,25 +66,25 @@ Tarayıcınızı açın ve http://localhost adresine gidin, yükleme işlemini t
 
 ---
 
-## <a id="centos"></a> Installation on Centos 7 / Red Hat 7
+## <a id="centos"></a> Centos 7 / Red Hat 7 üzerinde kurulum
 
-Considerations:
-- PHP-FPM is running under the username `nginx`.
-- PHP-FPM is listen on Unix socket on `unix:/run/php/php-fpm.sock`.
-- Nginx is running under the username `nginx`.
-- You don't have installed any other webserver.
-- This is a basic configuration, considere read more for production environments.
+Hususlar:
+- PHP-FPM, `nginx` kullanıcı adı altında çalışıyor.
+- PHP-FPM, `unix:/run/php/php-fpm.sock` üzerinde Unix soketinde dinliyor.
+- Nginx, `nginx` kullanıcı adı altında çalışıyor.
+- Başka bir web sunucusu yüklemediniz.
+- Bu, üretim ortamları için daha fazla okuyan temel bir yapılandırmadır.
 
 ```
 $ sudo yum install -y epel-release
 ```
 
-Install Nginx Webserver, PHP and some tools.
+Nginx Web sunucusu, PHP ve bazı araçları yükleyin.
 ```
 $ yum install -y nginx php-fpm php-cli php-dom php-mbstring php-zip php-gd
 ```
 
-Configure Nginx, add a new file with the virtual server block in `/etc/nginx/conf.d/bludit.conf`
+Nginx'i yapılandırın, sanal sunucu bloğuyla yeni bir dosya ekleyin `/etc/nginx/conf.d/bludit.conf`
 ```
 server {
 	listen 80;
@@ -103,7 +103,7 @@ server {
 }
 ```
 
-Download the latest version of Bludit and uncompress it.
+Bludit'in son sürümünü indirin ve genişletin.
 ```
 $ mkdir /www
 $ cd /www
@@ -112,10 +112,10 @@ $ unzip bludit_latest.zip
 $ sudo chown -R nginx:nginx /www
 ```
 
-Restart the services to load the new configurations.
+Yeni yapılandırmaları yüklemek için hizmetleri yeniden başlatın.
 ```
 $ sudo systemctl php-fpm restart
 $ sudo systemctl nginx restart
 ```
 
-Open your browser and navigate to http://localhost, finish with the installation.
+Tarayıcınızı açın ve http://localhost adresine gidin, yükleme işlemini tamamlayın.
