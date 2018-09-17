@@ -1,40 +1,39 @@
-# Title: Request a particular page
+# Başlık: Belirli bir sayfa isteme
 <!-- Position: 3 -->
 ---
-Bludit API provides the feature to request a particular page.
+Bludit API, belirli bir sayfa talep etmek için özellik sağlar.
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+API'ye yönelik tüm talepler `API Token` ihtiyaç duyar, belirteci eklentinin ayarlarında bulabilirsiniz.
 
-<h2 id="request">Request</h2>
+<h2 id="request">İstek</h2>
 
-- Endpoint: `/api/pages/{key}`
-- Method: `GET`
-- Parameters: `token`
+- Son nokta: `/api/pages/{key}`
+- Yöntem: `GET`
+- Parametreler: `token`
 
-<h2 id="response">Response</h2>
+<h2 id="response">Yanıt</h2>
 
-- HTTP Code: `200`
-- Content-Type: `application/json`
-- Content
+- HTTP Kodu: `200`
+- İçerik Türü: `application/json`
+- İçerik
 
 ```
 {
 	"status": "0",
-	"message": "List of pages, amount of items: 15",
+	"message": "Sayfaların listesi, öge sayısı: 15",
 	"data": {
 		"key": "the-dog",
-		"title": "The Dog",
-		"content": "Content of the page",
-		"description": "Description of the page",
+		"title": "Köpek",
+		"content": "Sayfanın içeriği",
+		"description": "Sayfanın açıklaması",
 		"date": "2017-08-24 22:00:00",
 		"permalink": "http:\/\/example.com\/the-dog"
 	}
 }
 ```
 
-<h2 id="curl-example">CURL command example</h2>
-Here is an example of a request made via the command line with the command curl.
-
+<h2 id="curl-example">CURL komut örneği</h2>
+Komut satırı üzerinden komut istemiyle yapılan bir isteğin bir örneği.
 ```
 $ curl -vvv \
 	-X GET \
@@ -58,20 +57,20 @@ $ curl -vvv \
 
 {
 	"status": "0",
-	"message": "List of pages, amount of items: 15",
+	"message": "Sayfaların sayısı, öge miktarı: 15",
 	"data": {
 		"key": "the-dog",
-		"title": "The Dog",
-		"content": "Content of the page",
-		"description": "Description of the page",
+		"title": "Köpek",
+		"content": "Sayfanın içeriği",
+		"description": "Sayfanın açıklaması",
 		"date": "2017-08-24 22:00:00",
 		"permalink": "http:\/\/example.com\/the-dog"
 	}
 }
 ```
 
-<h2 id="ajax-example">Javascript: AJAX with jQuery</h2>
-Example of AJAX request with the library [jQuery](https://api.jquery.com/jQuery.ajax/).
+<h2 id="ajax-example">Javascript: jQuery ile AJAX</h2>
+Kütüphane ile AJAX talebi örneği [jQuery](https://api.jquery.com/jQuery.ajax/).
 
 ```
 $.ajax({
@@ -86,6 +85,6 @@ $.ajax({
 ```
 
 <div class="note">
-<div class="title">Download</div>
-Download the source code of the example in <a href="https://github.com/bludit/examples/tree/master/api/ajax-request-a-particular-page">jQuery</a>.
+<div class="title">İndir</div>
+Örnekteki kaynak kodunu <a href="https://github.com/bludit/examples/tree/master/api/ajax-request-a-particular-page">jQuery</a> adresinden indirebilirsin.
 </div>
