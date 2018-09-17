@@ -1,59 +1,59 @@
-# Title: Create a new page
+# Title: Bir sayfa oluştur
 <!-- Position: 4 -->
 ---
-Bludit API provides the features to create a new page.
+Bludit API, yeni bir sayfa oluşturmak için özellikler sağlar.
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+API'ye yönelik tüm talepler `API Token` ihtiyaç duyar, eklentiyi eklentinin ayarlarında bulabilirsiniz.
 
-All request to the API to write content is necessary to provide an `Authorization Token`. To get this kind of token you need a user with **ADMINISTRATOR** role. You can get the `Authorization Token` on **Admin panel > Manage > Users > {Username} > Edit User > Authentication Token > Token**.
+API'nın içerik yazma isteğinin tamamı bir `Authorization Token` sağlamak için gereklidir. Bu tür bir jetonu almak için **ADMINISTRATOR** rolüne sahip bir kullanıcıya ihtiyacınız var. `Authorization Token` burada bulunur: **Yönetici paneli > Yönet > Kullanıcılar > {Username} > Kullanıcıyı düzenle > Authentication Token > Token**.
 
-<h2 id="request">Request</h2>
+<h2 id="request">İstek</h2>
 
-- Endpoint: `/api/pages`
-- Method: `POST`
-- Content-Type: `application/json`
-- Content
+- Son nokta: `/api/pages`
+- Methot: `POST`
+- İçerik Türü: `application/json`
+- İçerik
 
 ```
 {
 	"token": "24a8857ed78a8c89a91c99afd503afa7",
 	"authentication": "193569a9d341624e967486efb3d36d75",
-	"title": "My dog",
-	"content": "Content of the page here, support Markdown code and HTML code."
+	"title": "Köpeğim",
+	"content": "Bu sayfanın içeriği, Markdown kodunu ve HTML kodunu destekler."
 }
 ```
 
-<h2 id="response">Response</h2>
+<h2 id="response">Yanıt</h2>
 
-- HTTP Code: `200`
-- Content-Type: `application/json`
-- Content
+- HTTP Kodu: `200`
+- İçerik Türü: `application/json`
+- İçerik
 
 ```
 {
 	"status": "0",
-	"message": "Page created.",
+	"message": "Sayfa oluşturuldu.",
 	"data": {
 		"key": "my-dog"
 	}
 }
 ```
 
-<h2 id="curl-example">CURL command example</h2>
-Here is an example that shows you how to create a new page via the command line with the command `curl`. The file `data.json` has the basic data needed to create a new page.
+<h2 id="curl-example">CURL komut örneği</h2>
+Komut satırı üzerinden `curl` komutu ile yeni bir sayfa nasıl oluşturulacağını gösteren bir örnek. `data.json` dosyası yeni bir sayfa oluşturmak için gereken temel verilere sahiptir.
 
-File `data.json`
+Dosya `data.json`
 
 ```
 {
 	"token": "24a8857ed78a8c89a91c99afd503afa7",
 	"authentication": "193569a9d341624e967486efb3d36d75",
-	"title": "My dog",
-	"content": "Content of the page here, support Markdown code and HTML code."
+	"title": "Köpeğim",
+	"content": "Bu sayfanın içeriği, Markdown kodunu ve HTML kodunu destekler."
 }
 ```
 
-Execute the command and attach the file `data.json`
+Komutu çalıştırın ve `data.json` dosyasını ekleyin
 
 ```
 $ curl -vvv \
@@ -80,7 +80,7 @@ $ curl -vvv \
 
 {
 	"status": "0",
-	"message": "Page created.",
+	"message": "Sayfa oluşturuldu.",
 	"data": {
 		"key": "my-dog"
 	}
