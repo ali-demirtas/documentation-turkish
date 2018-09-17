@@ -1,5 +1,5 @@
-# Bludit Documentation English Version
-Here you can find all the documentation about Bludit in English.
+# Bludit Belgeleri Türkçe sürümü
+Bludit ile ilgili bütün belgeleri burada bulabilirsiniz.
 
-This documentation is in sync with the website
-- https://docs.bludit.com/en/
+Bu belge web sitesiyle uyumludur
+- https://docs.bludit.com/tr/
