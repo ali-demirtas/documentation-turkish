@@ -6,7 +6,7 @@ Bludit API (Uygulama Programlama Arayüzü), Bludit ile kolay entegrasyon sağla
 <h2 id="installation">Kurulum</h2>
 Bludit önceden yüklenmiş eklenti API ile birlikte gelir, sadece onu etkinleştirmeniz gerekir.
 
-Go to **Yönetici paneli > Eklentiler > API > Etkinleştir**.
+**Yönetici paneli > Eklentiler > API > Etkinleştir** git.
 
 <h2 id="url">URL</h2>
 API'nin URL'si:
