@@ -11,6 +11,6 @@ Bludit PRO is available for Backers and Sponsors from Patreon. Donations and com
 - [Patreon](https://www.patreon.com/bludit)
 
 ## Plugins included in Bludit PRO
-- [Timemachine X](https://docs.bludit.com/en/bludit-pro/timemachine)
-- [Remote Content](https://docs.bludit.com/en/bludit-pro/remote-content)
-- Simple Stats
+- [Zaman Makinesi X](https://docs.bludit.com/en/bludit-pro/timemachine)
+- [Uzak İçerik](https://docs.bludit.com/en/bludit-pro/remote-content)
+- Basit İstatistikler
