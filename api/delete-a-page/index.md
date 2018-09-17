@@ -1,4 +1,4 @@
-# Title: Bir sayfayı sil
+# Başlık: Bir sayfayı sil
 <!-- Position: 6 -->
 ---
 Bludit API bir sayfayı düzenlemek için özellikler sağlar.
