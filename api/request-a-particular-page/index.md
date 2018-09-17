@@ -1,4 +1,4 @@
-# Başlık: Belirli bir sayfa isteme
+# Title: Belirli bir sayfa isteme
 <!-- Position: 3 -->
 ---
 Bludit API, belirli bir sayfa talep etmek için özellik sağlar.
