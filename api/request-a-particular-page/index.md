@@ -34,6 +34,7 @@ API'ye yönelik tüm talepler `API Token` ihtiyaç duyar, belirteci eklentinin a
 
 <h2 id="curl-example">CURL komut örneği</h2>
 Komut satırı üzerinden komut istemiyle yapılan bir isteğin bir örneği.
+
 ```
 $ curl -vvv \
 	-X GET \
