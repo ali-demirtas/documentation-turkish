@@ -10,7 +10,7 @@ API'nın içerik yazma isteğinin tamamı bir `Authorization Token` sağlamak i�
 <h2 id="request">İstek</h2>
 
 - Son nokta: `/api/pages`
-- Methot: `POST`
+- Yöntem: `POST`
 - İçerik Türü: `application/json`
 - İçerik
 
