@@ -1,4 +1,4 @@
-# Başlık: Sayfa listesi isteme
+# Title: Sayfa listesi isteme
 <!-- Position: 2 -->
 ---
 Bludit API, belirli bir sayfa listesi istemek için özellik sağlar.
