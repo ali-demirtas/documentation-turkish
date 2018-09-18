@@ -1,9 +1,9 @@
-# Title: Add a plugin to the repository
+# Title: Depoya eklenti ekleme
 <!-- Position: 1 -->
 ---
-If you have developed a plugin, you can include it on our repositories to display on the [Official Bludit plugins](https://plugins.bludit.com/).
+Bir eklenti geliştirdiyseniz, [Resmi Bludit eklentileri](https://plugins.bludit.com/) içinde görüntülemek için depolarımıza ekleyebilirsiniz.
 
-Basic requirements:
+Temel gereksinimler:
 
-- Live
-- Contact page
+- Canlı
+- İletişim sayfası
