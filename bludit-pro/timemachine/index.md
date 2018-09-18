@@ -1,24 +1,24 @@
-# Title: Timemachine
+# Title: Zaman Makinesi
 <!-- Position: 2 -->
 ---
-Timemachine is a plugin for Bludit and allows you to go back to some particular state of your system. For example, you deleted unintentionally a page and you want to recover it, or you edit some properties from the settings and you want to recover the previous settings.
+Zaman Makinesi, Bludit için bir eklentidir ve sisteminizin belirli bir durumuna geri dönmenizi sağlar. Örneğin, istemeden bir sayfayı sildiniz ve siz onu kurtarmak istiyorsunuz ya da ayarlardan bazı özellikleri düzenliyorsunuz ve önceki ayarları kurtarmak istiyorsunuz.
 
-## Enable Timemachine
-- Go to the **admin area**
-- Go to **Settings > Plugins**
-- Search for the plugin **Timemachine** and click on the button **Activate**
-- Now each event on your website is stored.
+## Zaman makinesini etkinleştirme
+- **Yönetici paneli**ne git
+- **Ayarlar > Eklentiler** git
+- **Zaman Makinesi** eklentisini arayın ve **Etkinleştir** düğmesine tıklayın
+- Artık web sitenizdeki her etkinlik saklanıyor.
 
-## How to recover a previous state
-- Go to the **admin area**
-- Go to **Settings > Plugins**
-- Search for the plugin **Timemachine** and click on the button **Settings**
-- You can see a list of events ordered by date.
-- Search for the event and click on the button **Go back to this point**
-- Now the system goes back in time to the particular state.
+## Önceki bir durum nasıl kurtarılır?
+- **Yönetici paneli**ne git
+- **Ayarlar > Eklentiler** git
+- **Zaman Makinesi** eklentisini arayın ve **Ayarlar** düğmesine tıklayın
+- Tarihe göre sıralanmış olayların listesini görebilirsiniz.
+- Etkinliği arayın ve **Bu noktaya geri dönün** düğmesine tıklayın
+- Şimdi sistem belirli bir duruma geri dönüyor.
 
-## Video tutorial
-This video shows how to enable the plugin **Timemachine**; Then two new pages are created and one of them is deleted to test the recovery system.
+## Video öğretici
+Bu video **Zaman Makinesi** eklentisinin nasıl etkinleştirileceğini gösterir. Daha sonra iki yeni sayfa oluşturulur ve bunlardan biri kurtarma sistemini test etmek için silinir.
 
 <div class="video-embed">
 	<iframe width="640" height="360" src="https://www.youtube.com/embed/30VuB1INVBg?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allowfullscreen></iframe>
