@@ -1,18 +1,18 @@
-# Title: Disable admin user
+# Title: Yönetici kullanıcısını devre dışı bırakma
 <!-- Position: 1 -->
 ---
-Bludit by default creates the user `admin` as administrator for the system. Bludit uses this user for password recovery events, or if you are going to delete some user and you want to keep his content, this content is assigned to the `admin` user.
+Bludit, varsayılan olarak `admin` kullanıcısını sistem yöneticisi olarak oluşturur. Bludit bu kullanıcıyı şifre kurtarma olayları için kullanır ya da bazı kullanıcıları silecek ve içeriğini saklamak istiyorsanız, bu içerik `admin` kullanıcısına atanır.
 
-For security reasons you can disable this user.
+Güvenlik nedeniyle bu kullanıcıyı devre dışı bırakabilirsiniz.
 
-## How to disable the admin user
-If you are going to disable the Administrator of the system ensure you have another user with the Administrator role.
+## Yönetici kullanıcısını nasıl devre dışı bırakabilirim?
+Sistemin yöneticisini devre dışı bırakacaksanız Yönetici rolüyle başka bir kullanıcınız olduğundan emin olun.
 
-- Go to the Admin Panel
-- Manage > Users > admin
-- Edit User > Status > Disable the user
+- Yönetim paneline gidin
+- Yönet > Kullanıcılar > admin
+- Kullanıcıyı düzenle > Durum > Kullanıcıyı devre dışı bırak
 
 <div class="note">
-<div class="title">Enable the user</div>
-To enable the user again you must set a new password.
+<div class="title">Kullanıcıyı etkinleştirme</div>
+Kullanıcıyı tekrar etkinleştirmek için yeni bir şifre belirlemelisiniz.
 </div>
