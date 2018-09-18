@@ -1,3 +1,3 @@
-# Title: Miscellaneous
+# Title: Çeşitli
 <!-- Position: 10 -->
 ---
