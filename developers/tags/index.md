@@ -20,7 +20,7 @@ Varsayılan olarak, etiketlerin veritabanı alfasayısal olarak sıralanır.
 		echo 'Etiket adı: '	. $tag->name();
 		echo 'Etiket anahtarı: ' . $tag->key();
 		echo 'Etiket bağlantısı: ' . $tag->permalink();
-		echo 'Sayfaların miktarını etiketle: ' . count($tag->pages());
+		echo 'Sayfaların etiket sayısı: ' . count($tag->pages());
 	}
 ?>
 ```
