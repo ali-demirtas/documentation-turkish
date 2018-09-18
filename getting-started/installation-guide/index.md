@@ -1,25 +1,25 @@
-# Title: Installation guide
+# Title: Kurulum rehberi
 <!-- Position: 3 -->
 ---
-Install Bludit in a few steps.
-1. Download the latest version from [the official page](https://www.bludit.com).
-2. Extract the zip file.
-3. Upload the extracted content of the zip file to the directory of your server/hosting, where Bludit will be installed. This can be the root directory or a subdirectory like for example `/bludit`.
-4. Open the directory with the installation in your browser. If it is in the root directory `https://example.com`, if it is in a subdirectory for example `https://example.com/bludit/`.
-5. Follow the Bludit Installer to configure the website.
+Bludit'i birkaç adımda kurun.
+1. En son sürümü [resmi sayfadan](https://www.bludit.com) indirin.
+2. Zip dosyasını genişletin.
+3. Zip dosyasının çıkarılmış içeriğini, Bludit'in yükleneceği sunucunuzun / barınmanızın dizinine yükleyin. Bu kök dizini veya örneğin `/bludit` gibi bir alt dizin olabilir.
+4. Tarayıcınızda kurulum ile dizini açın. Kök dizinde `https://example.com` ise,  alt dizinde ise örneğin `https://example.com/bludit/` dizinidir.
+5. Web sitesini yapılandırmak için Bludit Yükleyiciyi takip edin.
 
 <div class="note">
-<div class="title">Timezone</div>
-Bludit tries to find your timezone automatically but it is recommended to check it after the installation at:
-**Admin Panel > Settings > Language > Timezone**
+<div class="title">Zaman dilimi</div>
+Bludit, saat diliminizi otomatik olarak bulmaya çalışır ancak yüklemeden sonra kontrol etmeniz önerilir:
+**Yönetim paneli > Ayarlar > Dil > Zaman dilimi**
 </div>
 
 <div class="note">
-<div class="title">Web Server</div>
-If you have some issues with the installation you can check the section Web Servers. <a href="https://docs.bludit.com/en/webservers/apache">Apache</a> - <a href="https://docs.bludit.com/en/webservers/nginx">Nginx</a>
+<div class="title">Web Sunucusu</div>
+Yükleme ile ilgili bazı sorunlarınız varsa, Web Sunucuları bölümünü kontrol edebilirsiniz. <a href="https://docs.bludit.com/en/webservers/apache">Apache</a> - <a href="https://docs.bludit.com/en/webservers/nginx">Nginx</a>
 </div>
 
 <div class="note">
-<div class="title">Upload files</div>
-You can use an FTP or SFTP client or WebFTP to upload files to the hosting.
+<div class="title">Dosyaları yükle</div>
+Dosyaları barındırma servisine yüklemek için bir FTP veya SFTP istemcisi veya WebFTP kullanabilirsiniz.
 </div>
