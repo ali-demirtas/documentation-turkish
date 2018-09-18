@@ -1,13 +1,13 @@
-# Title: Categories
+# Title: Kategoriler
 <!-- Position: 5 -->
 ---
-Snippet code to work with categories.
+Kategorilerle çalışmak için kod parçacığı.
 
 <div class="note">
-By default, the database of categories is alphanumeric sorted.
+Varsayılan olarak, kategoriler veritabanı alfasayısal olarak sıralanır.
 </div>
 
-## List all categories
+## Tüm kategorileri listele
 
 ```
 <?php
@@ -15,15 +15,15 @@ By default, the database of categories is alphanumeric sorted.
 
 	foreach ($categories as $category) {
 		// Each category is an Category-Object
-		echo 'Category name: '	. $category->name();
-		echo 'Category key: ' 	. $category->key();
-		echo 'Category link: ' 	. $category->permalink();
-		echo 'Category amount of pages: ' . count($category->pages());
+		echo 'Kategori adı: '	. $category->name();
+		echo 'Kategori anahtarı: ' 	. $category->key();
+		echo 'Kategori bağlantısı: ' 	. $category->permalink();
+		echo 'Kategorideki sayfaların sayısı: ' . count($category->pages());
 	}
 ?>
 ```
 
-## List only the categories that have pages
+## Yalnızca sayfaları olan kategorileri listeleme
 
 ```
 <?php
@@ -32,15 +32,15 @@ By default, the database of categories is alphanumeric sorted.
 	foreach ($categories as $category) {
 		// Each category is an Category-Object
 		if (count($category->pages())>0) {
-			echo 'Category name: '	. $category->name();
-			echo 'Category key: ' 	. $category->key();
-			echo 'Category link: ' 	. $category->permalink();
+			echo 'Kategori adı: '	. $category->name();
+			echo 'Kategori anahtarı: ' 	. $category->key();
+			echo 'Kategori bağlantısı: ' 	. $category->permalink();
 		}
 	}
 ?>
 ```
 
-## List all categories and the pages related to the category
+## Kategoriyle ilgili tüm kategorileri ve sayfaları listeleyin
 
 ```
 <?php
@@ -48,33 +48,33 @@ By default, the database of categories is alphanumeric sorted.
 
 	foreach ($categories as $category) {
 		// Each category is an Category-Object
-		echo 'Category name: ' . $category->name();
+		echo 'Kategori adı: ' . $category->name();
 
 		// The method $category->pages() returns all the pages keys releated to the category
 		foreach ($category->pages() as $pageKey) {
 			// buildPage function returns a Page-Object
 			$page = buildPage($pageKey);
 
-			echo '- Page title: ' . $page->title();
+			echo '- Sayfa adı: ' . $page->title();
 		}
 	}
 ?>
 ```
 
-## List all pages related to a category
+## Kategori ile ilgili tüm sayfaları listeleme
 
 ```
 <?php
-        // Category key
+        // Kategori anahtarı
         $categoryKey = 'example';
 
 		// The category is an Category-Object
         $category = getCategory($categoryKey);
 
-        // Print the category name
-        echo 'Category name: ' . $category->name();
+        // Kategori adını yazdır
+        echo 'Kategori adı: ' . $category->name();
 
-        // Print the pages title related to the category "example"
+        // "example" kategorisiyle ilgili sayfaların başlıklarını yazdır
         foreach ($category->pages() as $pageKey) {
 			// buildPage function returns a Page-Object
 			$page = buildPage($pageKey);
@@ -84,19 +84,19 @@ By default, the database of categories is alphanumeric sorted.
 ?>
 ```
 
-## Get active category
+## Etkin kategoriyi al
 
 ```
 <?php
-	// Check if the user is browsing a category
+	// Kullanıcının bir kategoriye göz atıp atmadığını kontrol edin
 	if ($WHERE_AM_I=='category') {
-		// Get the category key from the URL
+		// Kategori anahtarını URL'den alın
 		$categoryKey = $Url->slug();
 
-		// Get the category name from the category key
+		// Kategori adını kategori anahtarından alın
 		$categoryName = $dbCategories->getName($categoryKey);
 
-		// Print the category name
+		// Kategori adını yazdır
 		echo $categoryName;
 	}
 ?>
