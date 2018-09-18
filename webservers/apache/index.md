@@ -1,31 +1,31 @@
 # Title: Apache
 <!-- Position: 1 -->
 ---
-Bludit try to auto configure the system, if you don't have any issues with the installation you don't need to follow the next steps.
+Bludit sistemi otomatik olarak yapılandırmayı deneyin, kurulumla ilgili herhangi bir sorununuz yoksa sonraki adımları izlemeniz gerekmez.
 
-Apache web server use the `.htaccess` file to keep some configurations, like rewrite rules. The `.htaccess` file is a hidden file.
+Apache web sunucusu, yeniden düzenleme kuralları gibi bazı yapılandırmaları saklamak için `.htaccess` dosyasını kullanır. `.htaccess` dosyası gizli bir dosyadır.
 
-- If you install Bludit in the root directory, you need to uncomment the line `RewriteBase /`.
+- Bludit'i kök dizine yüklerseniz, `RewriteBase /` satırını kaldırmanız gerekir.
 
-- If you install Bludit in a sub-directory, for example, `bludit`, you need to uncomment and change the `RewriteBase /` for `RewriteBase /bludit/`.
+- Bludit'i bir alt dizine, örneğin, `bludit` dizinine yüklerseniz, `RewriteBase /bludit/` için `RewriteBase /` ifadesini kaldırmanız ve değiştirmeniz gerekir.
 
-File: `.htaccess`
+Dosya: `.htaccess`
 
 ```
 AddDefaultCharset UTF-8
 
 <IfModule mod_rewrite.c>
 
-# Enable rewrite rules
+# Yeniden yazma kurallarını etkinleştir
 RewriteEngine on
 
-# Base directory
+# Temel dizin
 #RewriteBase /
 
-# Deny direct access to .txt files
+# .Txt dosyalarına doğrudan erişimi engelle
 RewriteRule ^bl-content/(.*)\.txt$ - [R=404,L]
 
-# All URL process by index.php
+# Tüm URL işlemleri index.php tarafından
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*) index.php [PT,L]
 
