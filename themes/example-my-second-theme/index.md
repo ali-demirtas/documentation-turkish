@@ -267,7 +267,7 @@ Kullanıcı ana sayfada ise, Bludit yayınlanmış tüm sayfalarda global bir di
 </html>
 ```
 
-If the user is watching a particular page, Bludit generates a global Page-Object `$page`, in this example, we are going to print the title and the content.
+Kullanıcı belirli bir sayfayı izliyorsa, Bludit genel bir Page-Object `$page`, sayfası oluşturur, bu örnekte başlığı ve içeriği yazdıracağız.
 
 ```
 <!DOCTYPE html>
@@ -281,11 +281,11 @@ If the user is watching a particular page, Bludit generates a global Page-Object
 	<!-- Javascript -->
 	<?php echo Theme::javascript('js/jquery.min.js') ?>
 
-	<!-- Load plugins with the hook siteHead -->
+	<!-- Kancalı eklentileri yükle siteHead -->
 	<?php Theme::plugins('siteHead') ?>
 </head>
 <body>
-	<!-- Load plugins with the hook siteBodyBegin -->
+	<!-- Kancalı eklentileri yükle siteBodyBegin -->
 	<?php Theme::plugins('siteBodyBegin') ?>
 
 	<h1><?php echo $site->title() ?></h1>
@@ -301,13 +301,13 @@ If the user is watching a particular page, Bludit generates a global Page-Object
 
 	<?php endif ?>
 
-	<!-- Load plugins with the hook siteBodyBegin -->
+	<!-- Kancalı eklentileri yükle siteBodyBegin -->
 	<?php Theme::plugins('siteBodyEnd') ?>
 </body>
 </html>
 ```
 
 <div class="note">
-<div class="title">Download</div>
-Download the source code of the theme <a href="https://github.com/bludit/examples/tree/master/themes/mars">Mars</a>.
+<div class="title">İndir</div>
+Temanın kaynak kodunu indirin: <a href="https://github.com/bludit/examples/tree/master/themes/mars">Mars</a>.
 </div>
