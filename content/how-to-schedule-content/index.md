@@ -16,7 +16,7 @@ Zamanlamak:
 
 <div class="note">
 <div class="title">Not</div>
-Planlanan içerik <b>Yönetim paneli</bnde <b>Zamanlanmış</b> etiketiyle <b>Yönet > İçerik</b> altında bulunur.
+Planlanan içerik <b>Yönetim paneli</b>nde <b>Zamanlanmış</b> etiketiyle <b>Yönet > İçerik</b> altında bulunur.
 </div>
 
 <div class="note">
