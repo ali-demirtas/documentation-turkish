@@ -1,19 +1,20 @@
-# Title: Example: My second theme
+# Title: Örnek: Benim ikinci temam
 <!-- Position: 3 -->
 ---
-Second example shows how you can create a theme from scratch for Bludit by adding CSS, Javascript and including support for plugins.
+İkinci örnek, CSS, Javascript ekleyerek ve eklentiler için destek dahil ederek Bludit için bir temayı nasıl oluşturabileceğinizi gösterir.
 
-The next theme is called `Mars`.
+Bir sonraki tema `Mars` olarak adlandırılır.
 
-If you are not interested in the tutorial you can download the source code of the <a href="https://github.com/bludit/examples/tree/master/themes/mars">Theme Mars</a>.
+Eğer öğretici ile ilgilenmiyorsanız, kaynak kodunu indirebilirsiniz <a href="https://github.com/bludit/examples/tree/master/themes/mars">Mars Teması</a>.
 
-<h2 id="folder-structure">1. Folder structure</h2>
-Create the folder for the theme inside the folder `/bl-themes/`, you will get `/bl-themes/mars/`.
+<h2 id="folder-structure">1. Klasör yapısı</h2>
 
-Next, create the languages, css and js folders:
-- Create the folder `languages` inside the folder `/bl-themes/mars/`
-- Create the folder `css` inside the folder `/bl-themes/mars/`
-- Create the folder `js` inside the folder `/bl-themes/mars/`
+`/bl-themes/` klasörünün içinde temanın klasörünü oluşturun, `/bl-themes/mars/`
+
+Ardından, dilleri, css ve js klasörlerini oluşturun:
+- `/bl-themes/mars/`klasörünün içinde `languages` klasörü oluşturun.
+- `/bl-themes/mars/`klasörünün içinde `css` klasörü oluşturun.
+- `/bl-themes/mars/`klasörünün içinde `js` klasörü oluşturun.
 
 ```
 /bl-themes/mars/
@@ -22,8 +23,9 @@ Next, create the languages, css and js folders:
 	language/
 ```
 
-<h2 id="name-and-information">2. Name and information</h2>
-Create a file with the theme information. The file will be in the root theme folder, file `metadata.json`, with the next JSON code:
+<h2 id="name-and-information">2. İsim ve bilgi</h2>
+
+Tema bilgisi içeren bir dosya oluşturun. Bir sonraki dosya, JSON koduyla kök tema klasöründe `metadata.json` dosyası olacak:
 
 ```
 {
@@ -38,19 +40,20 @@ Create a file with the theme information. The file will be in the root theme fol
 }
 ```
 
-Create another file with the name and description of the theme; create a file called `en.json` inside the folder `/bl-themes/mars/languages/`, with the next JSON code:
+Temanın adı ve açıklaması ile başka bir dosya oluşturun. Sonra, JSON koduyla `/bl-themes/mars/ anguages/` klasöründe `en.json` adlı bir dosya oluşturun:
 
 ```
 {
 	"theme-data":
 	{
 		"name": "Mars",
-		"description": "This is my second theme for Bludit."
+		"description": "Bu Bludit için ikinci temam."
 	}
 }
 ```
 <h2 id="index">3. Index.php</h2>
-Let's work on the file `index.php`, create the file inside the folder `/bl-themes/mars/`, with the next HTML code:
+
+`index.php` adlı dosya üzerinde çalışalım. Sonra, HTML koduyla `/bl-themes/mars/` dizinindeki dosyayı oluşturun:
 
 ```
 <!DOCTYPE html>
@@ -64,34 +67,13 @@ Let's work on the file `index.php`, create the file inside the folder `/bl-theme
 </html>
 ```
 
-<h2 id="css-files">4. CSS files</h2>
-Add some CSS files:
-- Using the Helper object `Theme::css()`
-- Using the HTML tag `<link href=".." rel="stylesheet" type="text/css" />`
+<h2 id="css-files">4. CSS dosyaları</h2>
 
-In this case we are going to use the Helper to add the CSS file `/bl-themes/mars/css/style.css`. With the Helper you don't need to specify the absolute path.
+Bazı CSS dosyaları ekle:
+- Helper nesnesini kullanma `Theme::css()`
+- HTML etiketini kullanma `<link href=".." rel="stylesheet" type="text/css" />`
 
-```
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-
-	<!-- CSS -->
-	<?php echo Theme::css('css/style.css') ?>
-</head>
-<body>
-
-</body>
-</html>
-```
-
-<h2 id="javascript-files">5. Javascript files</h2>
-Add some Javascript files:
-- Using the Helper object `Theme::javascript()`
-- Using the HTML tag `<script>...</script>`
-
-In this case we are going to use the Helper to add the Javascript file `/bl-themes/mars/js/jquery.min.js`. With the Helper you don't need to specify the absolute path.
+Bu durumda CSS dosyasını `/bl-themes/mars/css/style.css` eklemek için Helper'ı kullanacağız. Helper ile mutlak yolu belirtmenize gerek yoktur.
 
 ```
 <!DOCTYPE html>
@@ -101,9 +83,6 @@ In this case we are going to use the Helper to add the Javascript file `/bl-them
 
 	<!-- CSS -->
 	<?php echo Theme::css('css/style.css') ?>
-
-	<!-- Javascript -->
-	<?php echo Theme::javascript('js/jquery.min.js') ?>
 </head>
 <body>
 
@@ -111,13 +90,13 @@ In this case we are going to use the Helper to add the Javascript file `/bl-them
 </html>
 ```
 
-<h2 id="plugin-support">6. Add Plugin Support</h2>
-Add support for plugins, you can use the helper `Theme::plugins()`.
+<h2 id="javascript-files">5. Javascript dosyaları</h2>
 
-The plugin hooks for the site are:
-- `siteHead`, contains all the plugins which returns code for inside the `<head>...</head>`
-- `siteBodyBegin`, contains all the plugins which returns code for inside the `<body>...</body>` at the beginning, could be some welcome banner, or some tool bar for the top.
-- `siteBodyEnd`, contains all the plugins which returns code for inside the `<body>...</body>` at the bottom, such as javascript code.
+Bazı Javascript dosyaları ekle:
+- Helper nesnesini kullanma `Theme::javascript()`
+- HTML etiketini kullanma `<script>...</script>`
+
+Bu durumda Javascript dosyasını `/bl-themes/mars/js/jquery.min.js` eklemek için Helper'ı kullanacağız. Helper ile mutlak yolu belirtmenize gerek yoktur.
 
 ```
 <!DOCTYPE html>
@@ -130,25 +109,50 @@ The plugin hooks for the site are:
 
 	<!-- Javascript -->
 	<?php echo Theme::javascript('js/jquery.min.js') ?>
+</head>
+<body>
 
-	<!-- Load plugins with the hook siteHead -->
+</body>
+</html>
+```
+
+<h2 id="plugin-support">6. Eklenti desteği ekleme</h2>
+
+Eklentiler için destek ekleyin, helper'ı kullanabilirsiniz: `Theme::plugins()`
+
+Site için eklenti kancaları:
+- `siteHead`, `<head>...</head>` için kod döndüren tüm eklentileri içerir.
+- `siteBodyBegin`, başlangıçta `<body>...</body>` için kod döndüren tüm eklentileri içerir, hoş geldiniz başlığı veya üst kısım için bazı araç çubuğu olabilir.
+- `siteBodyEnd`,  javascript kodu gibi alt kısımda `<body>...</body>` için kod döndüren tüm eklentileri içerir.
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- CSS -->
+	<?php echo Theme::css('css/style.css') ?>
+
+	<!-- Javascript -->
+	<?php echo Theme::javascript('js/jquery.min.js') ?>
+
+	<!-- Kancalı eklentileri yükle siteHead -->
 	<?php Theme::plugins('siteHead') ?>
 </head>
 <body>
-	<!-- Load plugins with the hook siteBodyBegin -->
+	<!-- Kancalı eklentileri yükle siteBodyBegin -->
 	<?php Theme::plugins('siteBodyBegin') ?>
 
-	<!-- Here all the rest of HTML code -->
+	<!-- İşte bütün HTML kodları -->
 
-	<!-- Load plugins with the hook siteBodyBegin -->
+	<!-- Kancalı eklentileri yükle siteBodyBegin -->
 	<?php Theme::plugins('siteBodyEnd') ?>
 </body>
 </html>
 ```
 
-<h2 id="site-title-and-slogan">7. Site title and slogan</h2>
-You can use the Site-Object to get the title and slogan.
-
+<h2 id="site-title-and-slogan">7. Site başlığı ve sloganı</h2>
+Başlık ve sloganı almak için Site-Object kullanabilirsiniz.
 ```
 <!DOCTYPE html>
 <html>
@@ -161,17 +165,17 @@ You can use the Site-Object to get the title and slogan.
 	<!-- Javascript -->
 	<?php echo Theme::javascript('js/jquery.min.js') ?>
 
-	<!-- Load plugins with the hook siteHead -->
+	<!-- Kancalı eklentileri yükle siteHead -->
 	<?php Theme::plugins('siteHead') ?>
 </head>
 <body>
-	<!-- Load plugins with the hook siteBodyBegin -->
+	<!-- Kancalı eklentileri yükle siteBodyBegin -->
 	<?php Theme::plugins('siteBodyBegin') ?>
 
 	<h1><?php echo $site->title() ?></h1>
 	<h2><?php echo $site->slogan() ?></h2>
 
-	<!-- Load plugins with the hook siteBodyBegin -->
+	<!-- Kancalı eklentileri yükle siteBodyBegin -->
 	<?php Theme::plugins('siteBodyEnd') ?>
 </body>
 </html>
