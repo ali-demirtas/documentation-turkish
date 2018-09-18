@@ -1,9 +1,9 @@
-# Title: Add a theme to the repository
+# Title: Depoya tema ekleme
 <!-- Position: 1 -->
 ---
-If you have designed a theme, you can include it on our repositories to display on the [Official Bludit themes](https://themes.bludit.com).
+Bir tema tasarladıysanız, [Resmi Bludit temaları](https://themes.bludit.com) içinde görüntülemek için depolarımıza ekleyebilirsiniz.
 
-Basic requirements:
+Temel gereksinimler:
 
-- Live
-- Contact page
+- Canlı sohbet
+- İletişim sayfası
