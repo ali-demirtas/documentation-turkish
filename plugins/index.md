@@ -1,3 +1,3 @@
-# Title: Plugins
+# Title: Eklentiler
 <!-- Position: 4 -->
 ---
