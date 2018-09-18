@@ -1,16 +1,16 @@
-# Title: Brute Force Protection
+# Title: Kaba kuvvet koruması
 <!-- Position: 2 -->
 ---
-## What is Brute Force Attack?
-Consists of an attacker trying many passwords or passphrases with the hope of eventually guessing correctly -Wiki.
+## Kaba kuvvet saldırısı nedir?
+Bir saldırganın, çoğu zaman doğru bir şekilde tahmin etme ümidiyle birçok şifreyi veya şifreyi denemesinden oluşur. -Viki.
 
-## How this works?
-Bludit provides a brute force protection to mitigate this kind of attack and is enabled by default.
+## Bu nasıl çalışır?
+Bludit, bu tür saldırıları hafifletmek için kaba kuvvet koruması sağlar ve varsayılan olarak etkindir.
 
-For each fail on the login, Bludit adds the IP of the user who failed to authenticate on a blacklist. When the user fails for a number of times, Bludit blocks the offending IP for a period of time and the user can't log in until the block has expired.
+Oturum açmadaki her başarısızlık için Bludit, kara listeye kimlik doğrulamada başarısız olan kullanıcının IP'sini ekler. Kullanıcı birkaç kez başarısız olduğunda, Bludit bir süre için sorunlu IP'yi engeller ve kullanıcı, engel süresi doluncaya kadar oturum açamaz.
 
-## Class and Object
-There is a `Security Object` called `$Security` and the class of the object is `/bl-kernel/security.class.php`. Take a look at the variables inside the class.
+## Sınıf ve nesne
+`$Security` olarak adlandırılan bir `Security Object` vardır ve nesnenin sınıfı `/bl-kernel/security.class.php`'dir. Sınıf içindeki değişkenlere bir göz atın.
 
 <pre><code data-language="php">
 private $dbFields = array(
@@ -20,11 +20,11 @@ private $dbFields = array(
 );
 </code></pre>
 
-- `minutesBlocked`: Amount of minutes the IP is going to be blocked.
-- `numberFailuresAllowed`: Number of failed attempts for the block to trigger.
-- `blackList`: The list of IPs blocked.
+- `minutesBlocked`: IP'nin engelleneceği dakika miktarı.
+- `numberFailuresAllowed`: Engellemenin tetiklenmesi için başarısız deneme sayısı.
+- `blackList`: Engellenen IP'lerin listesi.
 
 <div class="note">
-<div class="title">Note</div>
-You can change this values for your own values.
+<div class="title">Not</div>
+Bu değerleri kendi değerleriniz için değiştirebilirsiniz.
 </div>
