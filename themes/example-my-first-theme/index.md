@@ -1,15 +1,15 @@
-# Title: Example: My first theme
+# Title: Örnek: Benim ilk temam
 <!-- Position: 2 -->
 ---
-Let's create a new and simple theme, I will call my new theme `Coffee`.
+Yeni ve basit bir tema yaratalım, yeni temayı 'Kahve' olarak adlandıracağım.
 
-- Create the folder theme, inside the folder `/bl-themes/`, you will get `/bl-themes/coffee/`
-- Create the folder `languages`, inside the folder `/bl-themes/coffee/`
-- Create the file `en.json` inside the folder `/bl-themes/coffee/languages/`
-- Create the file `metadata.json` inside the folder `/bl-themes/coffee/`
-- Create the file `index.php`, inside the folder `/bl-themes/coffee/`
+- `/bl-themes/` klasörünün içinde tema klasörünü oluşturun, `/bl-themes/coffee/`
+- `/bl-themes/coffee/` klasörünün içinde `languages` klasörü oluşturun
+- `/bl-themes/coffee/languages/` klasörünün içinde `en.json` dosyası oluşturun
+- `/bl-themes/coffee/` klasörünün içinde `metadata.json` dosyası oluşturun
+- `/bl-themes/coffee/` klasörünün içinde `index.php` dosyası oluşturun
 
-You are going to have the next folder and files structure.
+Bir sonraki klasör ve dosya yapısına sahip olacaksınız.
 
 ```
 /bl-themes/coffee/
@@ -18,7 +18,7 @@ You are going to have the next folder and files structure.
 	index.php
 ```
 
-Next steps are to create the content of the files. Let's start with the `index.php` and add the following HTML and PHP code.
+Sonraki adımlar dosyaların içeriğini oluşturmaktır. `index.php` ile başlayalım ve aşağıdaki HTML ve PHP kodunu ekleyelim.
 
 ```
 <!DOCTYPE html>
@@ -40,19 +40,19 @@ Next steps are to create the content of the files. Let's start with the `index.p
 </html>
 ```
 
-Edit the file `languages/en.json` to add the name and description about the theme.
+Temayla ilgili adı ve açıklamayı eklemek için `languages/en.json` adlı dosyayı düzenleyin.
 
 ```
 {
 	"theme-data":
 	{
-		"name": "Coffee",
-		"description": "This is my first theme for Bludit."
+		"name": "Kahve",
+		"description": "Bu Bludit için ilk temam."
 	}
 }
 ```
 
-Now edit the file `metadata.json` to complete the information about the theme.
+Şimdi tema ile ilgili bilgileri tamamlamak için `metadata.json` dosyasını düzenleyin.
 
 ```
 {
@@ -67,4 +67,4 @@ Now edit the file `metadata.json` to complete the information about the theme.
 }
 ```
 
-Congrats, you have your first theme for Bludit!
+Tebrikler, Bludit için ilk temanıza sahipsiniz!
