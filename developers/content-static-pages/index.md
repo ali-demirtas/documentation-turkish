@@ -9,11 +9,11 @@ Bludit'in iki tür içeriği vardır, **sayfalar** ve **sabit sayfalar**.
 Bu bölümde, **sabit sayfalar** ile çalışmak için bazı kod parçacıkları göstereceğiz.
 
 ## Tüm sabit sayfaları göster
-Kolay yolu işlevi kullanıyor `buildStaticPages()`
+Kolay yolu `buildStaticPages()` nesnesini kullanmaktır.
 
 ```
 <?php
-	// Each static page is an Page-Object
+	// Her sabit sayfa Page-Object nesnesidir
 	$staticPages = buildStaticPages();
 
 	foreach ($staticPages as $page) {
@@ -22,16 +22,16 @@ Kolay yolu işlevi kullanıyor `buildStaticPages()`
 ?>
 ```
 
-Or you can use the the object `$dbPages` to get the database of keys of the static pages and build the pages.
+Ya da sabit sayfaların anahtarlarının veritabanını almak ve sayfaları oluşturmak için `$dbPages` nesnesini kullanabilirsiniz.
 
 ```
 <?php
-	// Get the keys of the static pages
+	// Sabit sayfaların anahtarlarını al
 	$staticPages = $dbPages->getStaticDB();
 
-	// Foreach page key build the page and print the title
+	// Foreach sayfası tuşu sayfayı oluşturun ve başlığı yazdırın
 	foreach ($staticPages as $pageKey) {
-		// buildPage function returns a Page-Object
+		// buildPage işlevi bir Page-Object döndürür
 		$page = buildPage($pageKey);
 
 		echo $page->title();
