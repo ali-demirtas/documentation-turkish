@@ -1,26 +1,26 @@
-# Title: Upgrade guide
+# Title: Yükseltme rehberi
 <!-- Position: 4 -->
 ---
-Upgrade Bludit in a few steps.
-1. Make a full backup, all files and directories.
-2. Remember which version of Bludit you are using for a possible roll-back.
-3. Download the latest version from [the official page](https://www.bludit.com).
-4. Extract the zip file.
-5. Replace existing files with the new files.
-6. Log into the admin area.
-7. Done.
+Bludit'i birkaç adımda yükseltin.
+1. Tüm dosya ve dizinlerin tamamını yedekleyin.
+2. Olası bir geri alma için hangi Bludit sürümünü kullandığınızı unutmayın.
+3. En son sürümü [resmi sayfadan](https://www.bludit.com) indirin.
+4. Zip dosyasını ayıkla.
+5. Varolan dosyaları yeni dosyalarla değiştirin.
+6. Yönetici paneline giriş yapın.
+7. Tamamlandı.
 
 <div class="note">
-<div class="title">Upgrade from 1.x to 2.x</div>
-Before upgrade from 1.x read the release note on the <a href="https://blog.bludit.com">blog</a> about the new version, there are extra steps to do.
+<div class="title">1.x’ten 2.x’e yükseltme</div>
+1.x'ten yükseltmeden önce, yeni sürümle ilgili <a href="https://blog.bludit.com">blog</a> üzerindeki sürüm notunu okuyun, yapılacak ek adımlar vardır.
 </div>
 
 <div class="note">
-<div class="title">Important</div>
-After the upgrade, it's highly recommended to check your settings.
+<div class="title">Önemli</div>
+Yükseltme işleminden sonra, ayarlarınızı kontrol etmeniz önerilir.
 </div>
 
 <div class="note">
-<div class="title">Upload files</div>
-You can use a FTP client to upload files to the hosting.
+<div class="title">Dosyaları yükle</div>
+Dosyaları barındırma servisine yüklemek için bir FTP istemcisi kullanabilirsiniz.
 </div>
