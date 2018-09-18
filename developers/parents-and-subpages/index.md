@@ -1,24 +1,24 @@
-# Title: Parents and subpages
+# Title: Üst ve alt sayfalar
 <!-- Position: 7 -->
 ---
 <div class="note">
-The following codes work in Bludit > v2.3
+Aşağıdaki kodlar Bludit > v2.3'te çalışır
 </div>
 
-## Check if a page has children (subpages)
+## Bir sayfanın alt sayfaları olup olmadığını kontrol edin (alt sayfalar)
 
 ```
 <?php
 	// The variable $page is an Page-Object
 	if ($page->hasChildren())) {
-		echo 'The page has children';
+		echo 'Bu sayfada alt sayfa var';
 	} else {
-		echo 'The page does not have children';
+		echo 'Bu sayfada alt sayfa yok';
 	}
 ?>
 ```
 
-## List all children of a page
+## Bir sayfanın tüm alt sayfalarını listele
 
 ```
 <?php
@@ -32,45 +32,45 @@ The following codes work in Bludit > v2.3
 ?>
 ```
 
-## Check if a page is a child (has a parent)
+## Bir sayfanın alt sayfa olup olmadığını kontrol edin (üst sayfa var)
 
 ```
 <?php
 	// The variable $page is an Page-Object
 	if ($page->isChild())) {
-		echo 'The page is a child';
+		echo 'Bu bir alt sayfadır';
 	} else {
-		echo 'The page is not a child';
+		echo 'Bu bir alt sayfa değildir';
 	}
 ?>
 ```
 
-## Print the title of the parent page from the child
-If a page has a child you can call the methods of the parent page with the method `parentMethod()`.
+## Ana sayfanın başlığını alt sayfadan yazdır
+Bir sayfanın bir alt sayfası varsa, ana sayfanın yöntemlerini  `parentMethod()` yöntemiyle çağırabilirsiniz.
 
 ```
 <?php
 	// The variable $page is an Page-Object
 	if ($page->isChild())) {
-		echo 'Title of the parent page: ' . $page->parentMethod('title');
+		echo 'Ana sayfanın başlığı: ' . $page->parentMethod('title');
 	} else {
-		echo 'The page is not child';
+		echo 'Sayfa, alt sayfa değil';
 	}
 ?>
 ```
 
-## Print a Navigation Bar
-A parent page might or may not have children.
+## Gezinme çubuğu yazdır
+Bir üst sayfa alt sayfa sahibi olabilir veya olmayabilir.
 
 ```
 <?php
-	// Get the list of parent pages
+	// Üst sayfaların listesini al
 	$parents = buildParentPages();
 
 	foreach ($parents as $parent) {
 		echo $parent->title();
 
-		// Check if the page has children
+		// Sayfanın alt sayfa olup olmadığını kontrol edin
 		if ($parent->hasChildren()) {
 			// Get the list of children
 			$children = $parent->children();
