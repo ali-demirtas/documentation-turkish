@@ -1,3 +1,3 @@
-# Title: Security
+# Title: Güvenlik
 <!-- Position: 6 -->
 ---
