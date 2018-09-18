@@ -5,5 +5,5 @@ Bir eklenti geliştirdiyseniz, [Resmi Bludit eklentileri](https://plugins.bludit
 
 Temel gereksinimler:
 
-- Canlı
+- Canlı sohbet
 - İletişim sayfası
