@@ -1,13 +1,13 @@
-# Title: Themes
+# Title: Temalar
 <!-- Position: 6 -->
 ---
-Bludit supports themes to change the appearance of your website or blog.
+Bludit, web sitenizin veya blogunuzun görünümünü değiştirmek için temaları destekler.
 
-You can find themes on the website [Bludit Themes](https://themes.bludit.com).
+Temaları web sitesinde bulabilirsiniz: [Bludit Temaları](https://themes.bludit.com).
 
-## How to install a theme
-1. Download the zip file with the theme.
-2. Uncompress the zip file.
-3. Copy the theme folder into the folder `/bl-themes/` on the server.
-4. Go to the **Admin panel**, on the left sidebar go to **Settings > Themes**.
-5. Look for the theme on the list and click on **Activate**.
+## Bir tema nasıl kurulur?
+1. Zip dosyasını tema ile indirin.
+2. Zip dosyasını aç.
+3. Tema klasörünü sunucudaki `/bl-themes/` klasörüne kopyalayın.
+4. **Yönetim paneline** gidin, sol kenar çubuğundaki **Ayarlar > Temalar** gidin.
+5. Listedeki temayı arayın ve **Etkinleştir** tıklayın.
