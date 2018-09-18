@@ -6,10 +6,10 @@ Bludit'in iki tür içeriği vardır, **sayfalar** ve **sabit sayfalar**.
 - **Sayfalar**, **Ayarlar > Gelişmiş > Sırala** ile tanımlanmış ayarlara göre sıralanır,  varsayılan olarak tarihe göre sıralanmıştır.
 - **Sabit sayfalar** her zaman pozisyona göre sıralanır.
 
-Bu bölümde, **pages** ile çalışmak için bazı kod parçacıkları göstereceğiz.
+Bu bölümde, **sayfalar** ile çalışmak için bazı kod parçacıkları göstereceğiz.
 
 ## En son 5 sayfayı listeleme
-Bu kod parçacığı, yayınlanan en son 5 sayfanın `title` yazdırır.
+Bu kod parçacığı, yayınlanan en son 5 sayfanın `başlaığını` yazdırır.
 ```
 <?php
 	// Paginator sayfa numarası, ilk sayfa 1
@@ -31,7 +31,7 @@ Bu kod parçacığı, yayınlanan en son 5 sayfanın `title` yazdırır.
 ```
 
 ## Tüm sayfaları listele
-Bu kod pasajı, sistemdeki tüm sayfaların `title` yayınlanan durumla birlikte yazdırır.
+Bu kod pasajı, sistemdeki tüm sayfaların `başlığını` yayınlanan durumla birlikte yazdırır.
 
 ```
 <?php
