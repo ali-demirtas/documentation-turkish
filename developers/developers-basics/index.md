@@ -1,12 +1,12 @@
-# Title: Developers basics
+# Title: Geliştiricilerin temelleri
 <!-- Position: 1 -->
 ---
-Let's start checking environment variables from your current installation. Go to your admin panel to the developer's area `https://example.com/admin/developers`, this section is hidden from the menu.
+Mevcut değişkenlerinizden ortam değişkenlerini kontrol etmeye başlayalım. Yönetici panelinize geliştiricinizin `https://example.com/admin/developers` alanına gidin, bu bölüm menüden gizlenmiştir.
 
-You can see some information about your PHP configuration, environment variables such as `$_SERVER`, extension loaded, locales installed, Bludit constants and some Objects properties.
+PHP konfigürasyonunuz, `$_SERVER` gibi çevre değişkenleri, yüklenen eklentiler, kurulu olan yerel ayarlar, Bludit sabitleri ve bazı Nesneler özellikleri gibi bazı bilgileri görebilirsiniz.
 
-## Flow of loading files for admin panel
-These are the files loaded when some user goes to the admin panel.
+## Yönetici paneli için dosya yükleme akışı
+Bunlar, bazı kullanıcılar yönetici paneline gittiğinde yüklenen dosyalardır.
 
 ```
 index.php
@@ -24,8 +24,8 @@ index.php
 			bl-kernel/admin/controllers/{VIEW}.php
 ```
 
-## Flow of loading files for site
-These are the files loaded when some user goes to the site.
+## Site için dosya yükleme akışı
+Bunlar, bazı kullanıcılar siteye gittiğinde yüklenen dosyalardır.
 
 ```
 index.php
@@ -41,10 +41,10 @@ index.php
 		bl-themes/{THEME_NAME}/index.php
 ```
 
-## Environment variables and constants
-Bludit provides different environment variables and constants with some pre-defined configuration.
+## Ortam değişkenleri ve sabitler
+Bludit, önceden tanımlanmış bazı yapılandırmalarla farklı ortam değişkenleri ve sabitler sağlar.
 
 - [bl-kernel/boot/init.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/init.php)
 - [bl-kernel/boot/variables.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/variables.php)
 
-Another place where you can see environment variables defined is on the rules `bl-kernel/boot/rules/`, for example, the variables about `content` and `pages` are defined in [bl-kernel/boot/rules/69.pages.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/rules/69.pages.php).
+Tanımlanan ortam değişkenlerini görebileceğiniz başka bir yer ise `bl-kernel/boot/rules/` kurallarına dayanır, örneğin, `content` ve `pages` ilgili değişkenler [bl-kernel/boot/rules/69.pages.php] ile tanımlanır.(https://github.com/bludit/bludit/blob/master/bl-kernel/boot/rules/69.pages.php)
