@@ -5,7 +5,7 @@ Bludit, işlevlerini genişletmek için eklentileri destekler.
 
 Bludit önceden yüklenmiş eklentilerle birlikte gelir. Fakat hepsi varsayılan olarak etkin değildir.
 
-Eklentileri web sitesinden indirebilirsiniz [Bludit Plugins](https://plugins.bludit.com).
+Eklentileri web sitesinden indirebilirsiniz: [Bludit Eklentileri](https://plugins.bludit.com).
 
 ## Eklenti nasıl kurulur?
 1. Zip dosyasını eklenti ile indirin.
