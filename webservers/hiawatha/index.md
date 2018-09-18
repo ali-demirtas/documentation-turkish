@@ -2,7 +2,7 @@
 <!-- Position: 2 -->
 <!-- Date: 2017-08-22 22:00:00 -->
 ---
-Bludit supports Hiawatha webserver, you can use the following rewrite rule:
+Bludit, Hiawatha web sunucusunu destekler, aşağıdaki yeniden yazma kuralını kullanabilirsiniz:
 
 ```
 UrlToolkit {
