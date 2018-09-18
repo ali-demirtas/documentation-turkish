@@ -4,13 +4,13 @@
 ## Bludit PRO nedir?
 Bludit PRO, ekstra dikkat çekici eklentilerle Bludit. Bludit PRO'nun satın alınması ya da kullanılması için özel bir lisans gerekmez.
 
-Bludit PRO is available for Backers and Sponsors from Patreon. Donations and community support are what helps the project stay up and running. Support Bludit via Patreon today and enjoy all the great features of Bludit plus more with Bludit PRO!
+Bludit PRO, Patreon'dan Destekçiler ve Sponsorlar tarafından kullanılabilir. Bağışlar ve topluluk desteği, projenin çalışmaya devam etmesine yardımcı olan şeydir. Patreon aracılığıyla Bludit'i bugün destekleyin ve Bludit PRO ile Bludit PRO'nun tüm harika özelliklerinin tadını çıkarın!
 
-- Become a [Backer](https://www.patreon.com/bePatron?c=921115&rid=2458859)
-- Become a [Sponsor](https://www.patreon.com/bePatron?c=921115&rid=2458860)
+- [Destekçi] ol(https://www.patreon.com/bePatron?c=921115&rid=2458859)
+- [Sponsor] ol(https://www.patreon.com/bePatron?c=921115&rid=2458860)
 - [Patreon](https://www.patreon.com/bludit)
 
-## Plugins included in Bludit PRO
+## Bludit PRO'da bulunan eklentiler
 - [Zaman Makinesi X](https://docs.bludit.com/en/bludit-pro/timemachine)
 - [Uzak İçerik](https://docs.bludit.com/en/bludit-pro/remote-content)
 - Basit İstatistikler
