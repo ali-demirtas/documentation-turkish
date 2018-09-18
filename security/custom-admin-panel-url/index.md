@@ -1,8 +1,8 @@
-# Title: Custom admin panel URL
+# Title: Özel yönetici paneli URL'si
 <!-- Position: 3 -->
 ---
-Bludit by default provides the admin panel on the context `/admin`.
+Bludit, varsayılan olarak yönetici panelini `/admin` bağlamında sunar.
 
-You can change it by editing the file `/bl-kernel/boot/variables.php`. Change the constant `ADMIN_URI_FILTER` to your own value.
+`/bl-kernel/boot/variables.php` dosyasını düzenleyerek değiştirebilirsiniz.`ADMIN_URI_FILTER` sabitini kendi değerinizle değiştirin.
 
 <pre><code data-language="php">define('ADMIN_URI_FILTER', 'admin');</code></pre>
