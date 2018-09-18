@@ -1,57 +1,56 @@
-# Title: Add a plugin or theme to the repositories
+# Title: Depolara bir eklenti veya tema ekleme
 <!-- Position: 1 -->
 ---
 
+BU BÖLÜM KULLANIMDAN KALDIRILMIŞTIR !
 
-THIS SECTION IS DEPRECATED !
 
+Bir eklenti veya bir tema geliştirdiyseniz, onu depolarımıza ekleyebilirsiniz. Onaylandıktan sonra, ilgili ana sayfalarda görüntülenecektir: [Bludit Eklentileri](https://plugins.bludit.com) and [Bludit Temaları](https://themes.bludit.com).
 
-If you have developed a plugin or a theme, you can include it on our repositories. Once approved, it will be displayed on the respective homepages: [Bludit Plugins](https://plugins.bludit.com) and [Bludit Themes](https://themes.bludit.com).
+## Gereksinimler
+- Eklenti veya tema halka açık bir Github deposunda olmalıdır.
+- Depo, önceden tanımlanmış bir yapıya sahip olmalıdır (yapının altında).
 
-## Requirements
-- The plugin or theme must be in a public Github repository.
-- The repository must have a pre-defined structure (below the structure).
-
-## Pre-defined structure for the host repository
-On the root of the repository must be the source code and the following files are required:
+## Ana bilgisayar deposu için öntanımlı yapı
+Deponun kökünde kaynak kod olmalı ve aşağıdaki dosyalar gereklidir:
 ```
 languages/en.json
 metadata.json
 ...
 ```
 
-Here is an example of a repository with a plugin
+İşte bir eklenti ile bir depo örneği
 - https://github.com/bludit-plugins/hello
 
-Here is an example of a repository with a theme
+İşte bir tema ile bir depo örneği
 - https://github.com/bludit-themes/massively
 
-## Add the repository to the list
-Once you have your Github repository created you can add the URL to our list.
+## Depoyu listeye ekle
+Github deponuzu oluşturduktan sonra URL'yi listemize ekleyebilirsiniz.
 
-For plugins we keep the list of repositories here
+Eklentiler için burada depoların listesini tutuyoruz
 - https://github.com/bludit/plugins/blob/master/repositories.txt
 
-For themes we keep the list of repositories here
+Temalar için burada depoların listesini tutuyoruz
 - https://github.com/bludit/themes/blob/master/repositories.txt
 
-## How to modify the file repositories.txt
-You need to generate a Pull Request to modify this file. Below are some pictures showing the steps to do it via Web UI. These steps show how to modify the `repositories.txt` file for plugins, use the same steps for the repository for themes.
+## Dosya repositories.txt nasıl değiştirilir?
+Bu dosyayı değiştirmek için bir Pull Request oluşturmanız gerekir. Aşağıda, Web Kullanıcı Arayüzü aracılığıyla yapılacak adımları gösteren bazı resimler bulunmaktadır. Bu adımlar eklentiler için `repositories.txt` dosyasının nasıl değiştirileceğini gösterir, temalar için depo için aynı adımları kullanın.
 
-### Step 1: Click on the pencil icon
+### Adım 1: Kalem simgesine tıklayın
 ![How to create a Pull Request 1](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/how-to-pull-request-1.png)
 
-### Step 2: Add your repository URL
+### Adım 2: Depo URL'nizi ekleyin
 ![How to create a Pull Request 2](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/how-to-pull-request-2.png)
 
-### Step 3: Complete title and description about your plugin or theme
+### Adım 3: Eklentiniz veya temanızla ilgili eksiksiz başlık ve açıklama girin
 ![How to create a Pull Request 3](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/how-to-pull-request-3.png)
 
-### Step 4: Click on the button Create pull request
+### Adım 4: Create pull request düğmesine tıklayın
 ![How to create a Pull Request 4](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/how-to-pull-request-4.png)
 
-### Step 5: Check the title and description and click on the button Create pull request
+### Adım 5: Başlığı ve açıklamayı kontrol edin ve Create pull request düğmesine tıklayın
 ![How to create a Pull Request 5](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/how-to-pull-request-5.png)
 
-### Step 6: Done!
+### Adım 6: Bitti!
 ![How to create a Pull Request 6](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/how-to-pull-request-6.png)
