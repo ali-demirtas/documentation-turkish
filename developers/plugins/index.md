@@ -1,62 +1,62 @@
-# Title: Plugins
+# Title: Eklentiler
 <!-- Position: 10 -->
 ---
-Snippet codes to work with plugins.
+Eklentiyle çalışmak için kod parçacıkları.
 
-## Activate plugin
+## Eklenti etkinleştirme
 
 ```
 <?php
-	// Class name of the plugin
+	// Eklentinin sınıf adı
 	$className = 'pluginAbout';
 
 	activatePlugin($className);
 ?>
 ```
 
-## Deactivate plugin
+## Eklenti devre dışı bırakma
 
 ```
 <?php
-	// Class name of the plugin
+	// Eklentinin sınıf adı
 	$className = 'pluginAbout';
 
 	deactivatePlugin($className);
 ?>
 ```
 
-## Check if a plugin is activated (enabled)
+## Bir eklentinin etkin olup olmadığını kontrol edin (etkin)
 
 ```
 <?php
-	// Class name of the plugin
+	// Eklentinin sınıf adı
 	$className = 'pluginAbout';
 
 	if (pluginActivated($className)) {
-		echo 'The plugin About is activated';
+		echo 'About eklentisi etkinleştirildi';
 	} else {
-		echo 'The plugin About is deactivated';
+		echo 'About eklentisi devre dışı bırakıldı';
 	}
 ?>
 ```
 
-## Get a plugin
-The function returns a [Plugin-Object](https://github.com/bludit/bludit/blob/master/bl-kernel/abstract/plugin.class.php)
+## Bir eklenti al
+Bu işlev bir [Plugin-Object] (https://github.com/bludit/bludit/blob/master/bl-kernel/abstract/plugin.class.php) döndürür.
 
-The plugin needs to be activated, otherwise the function `getPlugin()` returns `false`.
+Eklentinin etkinleştirilmesi gerekir, aksi halde `getPlugin()` işlevi `false` işlevine döner.
 
 ```
 <?php
-	// Class name of the plugin
+	// Eklentinin sınıf adı
 	$className = 'pluginAbout';
 
 	// Get the Plugin-Object
 	$plugin = getPlugin($className);
 
-	// Print the plugin label
+	// Eklenti etiketini yazdır
 	echo $plugin->label();
 	
-	// Execute the hook siteSidebar of the plugin and print it
+	// Eklentinin kancasını siteSidebar çalıştırın ve yazdırın
 	echo $plugin->siteSidebar();
 ?>
 ```
