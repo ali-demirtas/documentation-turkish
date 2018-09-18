@@ -10,8 +10,8 @@ PHP desteğine sahip bir web sunucusuna ihtiyacınız var.
 - JSON manipülasyonu için PHP [json](http://php.net/manual/en/book.json.php) modülü.
 - Bludit neredeyse her web sunucusunu destekler:
   * [PHP Yerleşik web sunucusu](http://php.net/manual/en/features.commandline.webserver.php)
-  * Modül ile Nginx [ngx_http_rewrite_module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html)
-  * Modül ile Apache [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html)
-  * Modül ile Lighttpd [mod_rewrite](http://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite)
+  * [ngx_http_rewrite_module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html) modülü ile Nginx
+  * [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) modülü ile Apache
+  * [mod_rewrite](http://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite) modülü ile Lighttpd
   * Hiawatha, [rewrite rules](https://www.hiawatha-webserver.org/howto/url_rewrite_rules)
   * H2O, Destek forumunda [H2O HTTP/2 web sunucusu ve Bludit](https://forum.bludit.org/viewtopic.php?f=6&t=1015) adresine bakın
