@@ -9,7 +9,7 @@ Bludit'in iki tür içeriği vardır, **sayfalar** ve **sabit sayfalar**.
 Bu bölümde, **sayfalar** ile çalışmak için bazı kod parçacıkları göstereceğiz.
 
 ## En son 5 sayfayı listeleme
-Bu kod parçacığı, yayınlanan en son 5 sayfanın `başlığını` yazdırır.
+Bu kod parçacığı, yayınlanan en son 5 sayfanın `title` yazdırır.
 ```
 <?php
 	// Paginator sayfa numarası, ilk sayfa 1
@@ -31,7 +31,7 @@ Bu kod parçacığı, yayınlanan en son 5 sayfanın `başlığını` yazdırır
 ```
 
 ## Tüm sayfaları listele
-Bu kod pasajı, sistemdeki tüm sayfaların `başlığını` yayınlanan durumla birlikte yazdırır.
+Bu kod pasajı, sistemdeki tüm sayfaların `title` yayınlanan durumla birlikte yazdırır.
 
 ```
 <?php
