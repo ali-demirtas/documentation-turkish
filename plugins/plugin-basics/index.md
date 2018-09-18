@@ -1,4 +1,4 @@
-# Title: Plugin basics
+# Title: Eklenti temelleri
 <!-- Position: 1 -->
 ---
 Plugins in Bludit resides in `bl-plugins` folder, and they have a pre-defined structure. Each plugin is an object in Bludit, with differents hooks (methods).
@@ -20,8 +20,8 @@ The name and description of the plugin is in the JSON file `languages/en.json`.
 {
 	"plugin-data":
 	{
-		"name": "Hello World",
-		"description": "Print Hello World in the sidebar"
+		"name": "Merhaba dünya",
+		"description": "Yan menüde merhaba dünya yazdırır"
 	}
 }
 ```
@@ -42,14 +42,14 @@ The information of the plugin is in the JSON file `metadata.json`.
 }
 ```
 
-<h2 id="hello-world">Hello World</h2>
+<h2 id="hello-world">Merhaba dünya</h2>
 The Hello World plugin for Bludit, the below code needs to be in the file `plugin.php`.
 
 ```
 <?php
 	class pluginHello extends Plugin {
 		public function siteSidebar() {
-			echo 'Hello world';
+			echo 'Merhaba dünya';
 		}
 	}
 ?>
