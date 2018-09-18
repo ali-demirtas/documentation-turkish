@@ -3,7 +3,7 @@
 ---
 Bludit'in iki tür içeriği vardır, **sayfalar** ve **sabit sayfalar**.
 
-- **Sayfalar**, **Settings > Advanced > Sırala** ile tanımlanmış ayarlara göre sıralanır,  varsayılan olarak tarihe göre sıralanmıştır.
+- **Sayfalar**, **Ayarlar > Gelişmiş > Sırala** ile tanımlanmış ayarlara göre sıralanır,  varsayılan olarak tarihe göre sıralanmıştır.
 - **Sabit sayfalar** her zaman pozisyona göre sıralanır.
 
 Bu bölümde, **pages** ile çalışmak için bazı kod parçacıkları göstereceğiz.
