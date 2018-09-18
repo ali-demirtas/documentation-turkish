@@ -1,17 +1,17 @@
-# Title: Requirements
+# Title: Gereksinimler
 <!-- Position: 2 -->
 ---
-You just need a web server with PHP support.
+PHP desteğine sahip bir web sunucusuna ihtiyacınız var.
 
-- PHP v5.3 or higher.
-- PHP [mbstring](http://php.net/manual/en/book.mbstring.php) module for full UTF-8 support.
-- PHP [gd](http://php.net/manual/en/book.image.php) module for image processing.
-- PHP [dom](http://php.net/manual/en/book.dom.php) module for DOM manipulation.
-- PHP [json](http://php.net/manual/en/book.json.php) module for JSON manipulation.
-- Bludit supports almost every webserver:
-  * [PHP Built-in web server](http://php.net/manual/en/features.commandline.webserver.php)
-  * Nginx with module [ngx_http_rewrite_module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html)
-  * Apache with module [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html)
-  * Lighttpd with module [mod_rewrite](http://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite)
+- PHP v5.3 ya da üzeri.
+- Tam UTF-8 desteği için PHP [mbstring](http://php.net/manual/en/book.mbstring.php) modülü.
+- Görüntü işlemek için PHP [gd](http://php.net/manual/en/book.image.php) modülü.
+- DOM manipülasyonu için PHP [dom](http://php.net/manual/en/book.dom.php) modülü.
+- JSON manipülasyonu için PHP [json](http://php.net/manual/en/book.json.php) modülü.
+- Bludit neredeyse her web sunucusunu destekler:
+  * [PHP Yerleşik web sunucusu](http://php.net/manual/en/features.commandline.webserver.php)
+  * Modül ile Nginx [ngx_http_rewrite_module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html)
+  * Modül ile Apache [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html)
+  * Modül ile Lighttpd [mod_rewrite](http://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite)
   * Hiawatha, [rewrite rules](https://www.hiawatha-webserver.org/howto/url_rewrite_rules)
-  * H2O, see the post [H2O HTTP/2 web server and Bludit](https://forum.bludit.org/viewtopic.php?f=6&t=1015) in the Support Forum
+  * H2O, Destek forumunda [H2O HTTP/2 web sunucusu ve Bludit](https://forum.bludit.org/viewtopic.php?f=6&t=1015) adresine bakın
