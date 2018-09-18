@@ -1,3 +1,3 @@
-# Title: Getting started
+# Title: Başlarken
 <!-- Position: 1 -->
 ---
