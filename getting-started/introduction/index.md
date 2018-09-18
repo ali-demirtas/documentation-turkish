@@ -1,7 +1,7 @@
 # Title: Giriş
 <!-- Position: 1 -->
 ---
-Bludit is a web application to build your own **website** or **blog** in seconds, it's completely **free and open source**. Bludit uses files in **JSON** format to store the content, you don't need to install or configure a database. You only need a web server with PHP support.
+Bludit, kendi **web sitenizi** veya **blogunuzu** saniyeler içinde oluşturmak için bir web uygulamasıdır, tamamen **ücretsiz ve açık kaynaklı**dır. Bludit, içeriği depolamak için **JSON** formatında dosyaları kullanır, bir veritabanını yüklemenize veya yapılandırmanıza gerek yoktur. PHP desteğine sahip bir web sunucusuna ihtiyacınız var.
 
 <h2 id="support">Destek</h2>
 Sorular sorun, destek alın ve Bludit hakkında konuşun.
