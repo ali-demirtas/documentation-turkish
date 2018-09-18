@@ -1,30 +1,30 @@
-# Title: How to schedule content
+# Title: İçerik nasıl zamanlanır?
 <!-- Position: 4 -->
 <!-- Date: 2017-08-24 22:00:00 -->
 ---
-You can prepare a page and schedule it to be published on your website at a different date.
+Bir sayfa hazırlayabilir ve web sitenizde yayınlanmak üzere farklı bir tarihte zamanlayabilirsiniz.
 
-To schedule:
-1. Create a new page, click on **New content** on the left sidebar.
-2. Click on the **Advanced** tab.
-3. Choose the date and time you want the page to be published.
-4. The status of the page needs to be **Published**.
-5. Complete the page, such as title, and content.
-6. Click **Save** button.
+Zamanlamak:
+1. Yeni bir sayfa oluşturun, sol kenar çubuğundaki **Yeni içerik** tıklayın.
+2. **Gelişmiş** sekmesine tıklayın.
+3. Sayfanın yayınlanmasını istediğiniz tarih ve saati seçin.
+4. Sayfanın durumu **Yayınlanmış** olmalıdır.
+5. Başlık ve içerik gibi sayfayı tamamlayın.
+6. **Kaydet** düğmesine tıklayın.
 
 ![How to schedule a page](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/scheduled-page.png)
 
 <div class="note">
-<div class="title">Note</div>
-The scheduled content appears on the <b>Dashboard</b> under <b>Manage > Content</b> with a label <b>Scheduled</b>.
+<div class="title">Not</div>
+Planlanan içerik <b>Yönetim paneli</bnde <b>Zamanlanmış</b> etiketiyle <b>Yönet > İçerik</b> altında bulunur.
 </div>
 
 <div class="note">
-<div class="title">Note</div>
-The users can't access the page until the publish date.
+<div class="title">Not</div>
+Kullanıcılar, yayınlanma tarihine kadar sayfaya erişemez.
 </div>
 
 <div class="note">
-<div class="title">Note</div>
-You can modify the publish date by editing the page from <b>Manage > Content</b>.
+<div class="title">Not</div>
+Yayınlama tarihini, sayfayı <b>Yönet > İçerik </b>'den düzenleyerek değiştirebilirsiniz.
 </div>
