@@ -1,17 +1,17 @@
-# Title: Remote Content
+# Title: Uzak İçerik
 <!-- Position: 1 -->
 ---
-Remote Content plugin provides the feature to have all your content on Github or similar and stay in sync with your Bludit.
+Uzak İçerik eklentisi, tüm içeriğinizin Github veya benzerleri üzerinde olmasını ve Bludit'inizle senkronize kalmasını sağlar.
 
-For example, the [Bludit's Blog](https://blog.bludit.com) works with this plugin and the content of the site is on Github on this repository https://github.com/bludit/blog, when I want to create a new page, I create the page and upload to Github (push).
+Örneğin, [Bludit'in Blog'u] (https://blog.bludit.com) bu eklenti ile çalışır ve sitenin içeriği https://github.com/bludit/blog adresindeki Github deposu üzerindedir. Yeni bir sayfa oluşturmak için sayfayı oluşturup Github'a (push) yüklüyorum.
 
-## Webhooks
-It's possible to define a webhook on Github to ping Bludit on each change of the content in the repository. The plugin provides the URL with the webhook, is recommended change the endpoint of the webhook with some random string.
+## Web kancaları
+Havuzdaki içeriğin her değişikliğinde Bludit'e ping atmak için Github üzerinde bir webhook tanımlamak mümkündür. Eklenti, web kancası ile URL'yi sağlar, web kancasının son noktasını bazı rastgele dizelerle değiştirmenizi öneririz.
 
-## Video tutorial
-This video shows how to sync Bludit with Github.
+## Video öğretici
+Bu video, Bludit'in Github ile nasıl senkronize edileceğini gösterir.
 
-Here is a repository with three pages, each page has defined the date of publication, this repository is used in the video as an example.
+İşte üç sayfa içeren bir depo, her sayfa yayın tarihini tanımladı, bu depo örnek olarak videoda kullanılıyor.
 - https://github.com/bludit/remote-content-example
 
 <div class="video-embed">
