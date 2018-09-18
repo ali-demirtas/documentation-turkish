@@ -1,16 +1,16 @@
 # Title: Nginx
 <!-- Position: 1 -->
 ---
-Bludit supports [Nginx](https://nginx.org/en/) and is a recommended option for a Webserver.
+Bludit, [Nginx](https://nginx.org/en/) destekler ve bir Web sunucusu için önerilen bir seçenektir.
 
-Bludit has its own `router` which handles all requests and responses. The idea is to redirect all requests to the `index.php` file.
+Bludit, tüm istekleri ve yanıtları ele alan kendi `router` sahiptir. Fikir, tüm istekleri `index.php` dosyasına yönlendirmektir.
 
-Considerations:
-- The webserver is running PHP-FPM as CGI Process Manager
-- PHP-FPM is listen on Unix socket on `unix:/run/php/php-fpm.sock`.
+Hususlar:
+- Web sunucusu, PHP-FPM'yi CGI Process Manager olarak kullanıyor.
+- PHP-FPM `unix:/run/php/php-fpm.sock` üzerinde Unix soketinde dinliyor.
 
-## HTTP set up
-In order to set up a new server block for Bludit, generate a new file with the configuration in `/etc/nginx/conf.d/bludit.conf`, this directory could be different in other distributions of GNU/Linux, for example, in Ubuntu could be `/etc/nginx/sites-enabled/bludit.conf`. For security reasons dont forget to forbid the access to the folders `/bl-content/databases`, `/bl-content/pages` and `/bl-content/temp`. Otherwise its possible that users have dirrect access to some files inside these places. 
+## HTTP kurulumu
+Bludit için yeni bir sunucu bloğu kurmak için, `/etc/nginx/conf.d/bludit.conf` içinde yapılandırmayla yeni bir dosya oluşturun. Bu dizin GNU / Linux'un diğer dağıtımlarında farklı olabilir. Ubuntu'da `/etc/nginx/sites-enabled/bludit.conf` olabilir. Güvenlik nedeniyle, `/bl-content/databases`, `/bl-content/pages` ve `/bl-content/temp` klasörlerine erişimi yasaklamayı unutmayın. Aksi takdirde, kullanıcıların bu yerlerin içindeki bazı dosyalara doğrudan erişimi vardır.
 
 ```
 server {
@@ -43,10 +43,11 @@ server {
 }
 ```
 
-## HTTPS set up
-HTTPS configuration has some extra configurations and of course the SSL certificate. We recommend use [LetsEncrypt](https://letsencrypt.org) to get a free certificate.
+## HTTPS kurulumu
+HTTPS yapılandırmasının bazı ekstra yapılandırmaları ve elbette SSL sertifikası vardır. Ücretsiz bir sertifika almak için [LetsEncrypt] (https://letsencrypt.org) kullanmanızı öneririz.
 
-The server block has this configuration, and we add an extra block to redirect request from HTTP to HTTPS.
+Sunucu bloğu bu konfigürasyona sahiptir ve isteği HTTP'den HTTPS'ye yönlendirmek için fazladan bir blok ekliyoruz.
+
 ```
 server {
 	listen 443 ssl;
