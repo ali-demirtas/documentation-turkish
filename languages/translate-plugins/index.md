@@ -1,7 +1,7 @@
-# Title: Translate a plugin
+# Title: Bir eklentiyi çevir
 <!-- Position: 1 -->
 ---
-Each plugin has a folder `languages`, inside this folder you can create the different dictionaries files for each language.
+Her eklentinin bir `languages` dizini vardır, bu klasörün içinde her dil için farklı sözlük dosyaları oluşturabilirsiniz.
 
 ```
 /bl-plugins/{PLUGIN_NAME}/languages/
@@ -9,32 +9,33 @@ Each plugin has a folder `languages`, inside this folder you can create the diff
 	en.json
 	es.json
 	fr_FR.json
+	tr_TR.json
 	...
 ```
 
 <div class="note">
-<div class="title">File Encoding</div>
-All dictionary files are <b>JSON</b> files and are encoding on <b>UTF-8</b>.
+<div class="title">Dosya Kodlaması</div>
+Tüm sözlük dosyaları <b>JSON</b> dosyalarıdır ve <b>UTF-8</b> olarak kodlanmaktadır.
 </div>
 
-This is an example of an English dictionary `en.json`. Each line in `en.json `file is a key-value pair with the key on the left and the value on the right.
+Bu `tr_TR.json` Türkçe bir sözlük örneğidir. `tr_TR.json ` dosyasındaki her satır, soldaki anahtar ve sağdaki değer ile birlikte bir anahtar-değer çiftidir.
 
 ```
 {
 	"plugin-data":
 	{
-		"name": "Page list",
-		"description": "Shows the list of pages in order."
+		"name": "Sayfa listesi",
+		"description": "Sırayla sayfaların listesini gösterir."
 	},
 
-	"home": "Home",
-	"show-home-link": "Show home link"
+	"home": "Ana sayfa",
+	"show-home-link": "Ana sayfa bağlantısı"
 }
 ```
 
-As you can see, you have a field called `plugin-data`, this has the name and description of the plugin, and the next fields are phrases for the plugin as `home` and `show-home-link`.
+Gördüğünüz gibi `plugin-data` diye bir alanınız var, bu eklentinin adı ve açıklaması vardır ve sonraki alanlar eklenti için `home` ve `show-home-link` ifadeleridir..
 
-This is an example of a Spanish dictionary, the file is locate in `/bl-plugins/{PLUGIN_NAME}/languages/es.json`.
+Bu bir İspanyolca sözlük örneğidir, dosya `/bl-plugins/{PLUGIN_NAME}/languages/es.json` içinde bulunur.
 
 ```
 {
