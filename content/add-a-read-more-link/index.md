@@ -1,26 +1,26 @@
-# Title: Add a read more link
+# Title: Daha fazla bağlantısı ekle
 <!-- Position: 3 -->
 <!-- Date: 2017-08-24 22:00:00 -->
 ---
-You can split the content of the page adding the tag `<!-- pagebreak -->` between the content to split.
+Bölünecek içerik arasında, `<!-- pagebreak -->` etiketini ekleyerek sayfanın içeriğini bölebilirsiniz.
 
 ![Read more link](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/read-more-link.png)
 
-Example of content:
+Örnek içerik:
 ```
-This is the first part of the content of the page.
+Bu, sayfanın içeriğinin ilk kısmıdır.
 
 <!-- pagebreak -->
 
-This is the second part of the page.
+Bu, sayfanın içeriğinin ikinci kısmıdır.
 ```
 
 <div class="note">
-<div class="title">Video tutorial</div>
+<div class="title">Video öğretici</div>
 <a href="https://www.youtube.com/watch?v=8M7RqkwmAoY">Youtube</a>
 </div>
 
 <div class="note">
-<div class="title">Note</div>
-This feature is handled by the themes and not all the themes support it.
+<div class="title">Not</div>
+Bu özellik temalar tarafından ele alınır ve tüm temalar bunu desteklemez.
 </div>
