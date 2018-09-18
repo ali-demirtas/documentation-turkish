@@ -1,10 +1,10 @@
 # Title: Eklenti temelleri
 <!-- Position: 1 -->
 ---
-Plugins in Bludit resides in `bl-plugins` folder, and they have a pre-defined structure. Each plugin is an object in Bludit, with differents hooks (methods).
+Bludit'teki eklentiler, `bl-plugins` klasöründe bulunur ve önceden tanımlanmış bir yapıya sahiptir. Her eklenti, farklı kancalarla (yöntemlerle) Bludit'teki bir nesnedir.
 
-<h2 id="structure">Folder and Files Structure</h2>
-This is a mandatory folder structure and files for a plugin.
+<h2 id="structure">Klasör ve Dosya Yapısı</h2>
+Bu bir zorunlu klasör yapısı ve bir eklenti için dosyaları.
 
 ```
 /bl-plugins/{PLUGIN_NAME}/
@@ -13,8 +13,8 @@ This is a mandatory folder structure and files for a plugin.
 	plugin.php
 ```
 
-<h2 id="name-and-description">Name and Description</h2>
-The name and description of the plugin is in the JSON file `languages/en.json`.
+<h2 id="name-and-description">İsim ve Tanım</h2>
+Eklentinin adı ve açıklaması JSON dosyasında `languages/en.json` bulunur.
 
 ```
 {
@@ -26,8 +26,8 @@ The name and description of the plugin is in the JSON file `languages/en.json`.
 }
 ```
 
-<h2 id="information">Information</h2>
-The information of the plugin is in the JSON file `metadata.json`.
+<h2 id="information">Bilgi</h2>
+Eklentinin bilgileri JSON dosyasında `metadata.json` bulunur.
 
 ```
 {
@@ -43,7 +43,7 @@ The information of the plugin is in the JSON file `metadata.json`.
 ```
 
 <h2 id="hello-world">Merhaba dünya</h2>
-The Hello World plugin for Bludit, the below code needs to be in the file `plugin.php`.
+Bludit için Merhaba dünya eklentisi, aşağıdaki kodun `plugin.php` dosyasında olması gerekiyor.
 
 ```
 <?php
@@ -56,6 +56,6 @@ The Hello World plugin for Bludit, the below code needs to be in the file `plugi
 ```
 
 <div class="note">
-<div class="title">Download</div>
-Download the source code of the plugin <a href="https://github.com/bludit/examples/tree/master/plugins/hello-world">Hello World</a>.
+<div class="title">İndir</div>
+Eklentinin kaynak kodunu indir <a href="https://github.com/bludit/examples/tree/master/plugins/hello-world">Merhaba dünya</a>.
 </div>
