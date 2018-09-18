@@ -1,7 +1,7 @@
-# Title: Translate a theme
+# Title: Bir temayı çevir
 <!-- Position: 2 -->
 ---
-Each theme has a folder `languages`, inside this folder you can create the different dictionaries files for each language.
+Her temanın bir `languages` dizini vardır, bu klasörün içinde her dil için farklı sözlük dosyaları oluşturabilirsiniz.
 
 ```
 /bl-themes/{THEME_NAME}/languages/
@@ -9,29 +9,30 @@ Each theme has a folder `languages`, inside this folder you can create the diffe
 	en.json
 	es.json
 	fr_FR.json
+	tr_TR.json
 	...
 ```
 
 <div class="note">
-<div class="title">File Encoding</div>
-All dictionary files are <b>JSON</b> files and are encoding on <b>UTF-8</b>.
+<div class="title">Dosya Kodlaması</div>
+Tüm sözlük dosyaları <b>JSON</b> dosyasıdır ve <b>UTF-8</b> ile kodlanır.
 </div>
 
-This is an example of an English dictionary `en.json`. Each line in `en.json` file is a key-value pair with the key on the left and the value on the right.
+Bu bir Türkçe sözlük örneğidir `tr_TR.json`. `tr_TR.json` dosyasındaki her satır, soldaki anahtar ve sağdaki değere sahip bir anahtar-değer çiftidir.
 
 ```
 {
 	"theme-data":
 	{
-		"name": "Pure",
-		"description": "Simple and clean, based on the framework Pure.css."
+		"name": "Temiz",
+		"description": "Basit ve temiz, Pure.css çerçevesine göre."
 	}
 }
 ```
 
-As you can see, you have a field called `theme-data`, this has the name and description of the theme.
+Görebildiğiniz gibi, `theme-data` diye adlandırılan bir alanınız var, bunun temanın adı ve açıklaması var.
 
-This is an example of a Spanish dictionary, the file is locate in `/bl-themes/{THEME_NAME}/languages/es.json`.
+Bu bir İspanyolca sözlük örneğidir, dosya `/bl-themes/{THEME_NAME}/languages/es.json` içinde bulunur.
 
 ```
 {
