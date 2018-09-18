@@ -1,34 +1,34 @@
-# Title: Hooks list
+# Title: Kanca listesi
 <!-- Position: 2 -->
 ---
-Here is a list of Hooks supported by Bludit.
+İşte Bludit tarafından desteklenen kancaların bir listesi.
 
-| Hooks 			| Execute in 		| Notes						|
+| Kancalar 			| İçinde yürüt 		| Notlar						|
 | ------------------------------|-----------------------|-----------------------------------------------|
-| siteHead 			| Theme 		|						|
-| siteBodyBegin 		| Theme 		|						|
-| siteBodyEnd 			| Theme 		|						|
-| siteSidebar			| Theme			|						|
-| beforeSiteLoad		| Theme			|						|
-| afterSiteLoad			| Theme			|						|
-| pageBegin			| Theme			|						|
-| pageEnd			| Theme			|						|
-| adminHead			| Admin theme		|						|
-| adminBodyBegin		| Admin theme		|						|
-| adminBodyEnd			| Admin theme		|						|
-| adminSidebar			| Admin theme		|						|
-| beforeAdminLoad		| Core			|						|
-| afterAdminLoad		| Core			|						|
-| beforeRulesLoad		| Core			|						|
-| afterFormSave			| Core			|						|
-| afterPageCreate		| Core			|						|
-| afterPageModify		| Core			|						|
-| afterPageDelete		| Core			|						|
-| loginHead			| Core			|						|
-| loginBodyBegin		| Core			|						|
-| loginBodyEnd			| Core			|						|
+| siteHead 			| Tema		|						|
+| siteBodyBegin 		| Tema		|						|
+| siteBodyEnd 			| Tema		|						|
+| siteSidebar			| Tema			|						|
+| beforeSiteLoad		| Tema			|						|
+| afterSiteLoad			| Tema			|						|
+| pageBegin			| Tema		|						|
+| pageEnd			| Tema			|						|
+| adminHead			| Yönetici teması		|						|
+| adminBodyBegin		| Yönetici teması		|						|
+| adminBodyEnd			| Yönetici teması		|						|
+| adminSidebar			| Yönetici teması 	|						|
+| beforeAdminLoad		| Çekirdek			|						|
+| afterAdminLoad		| Çekirdek			|						|
+| beforeRulesLoad		| Çekirdek			|						|
+| afterFormSave			| Çekirdek			|						|
+| afterPageCreate		| Çekirdek			|						|
+| afterPageModify		| Çekirdek			|					  |
+| afterPageDelete		| Çekirdek			|					  |
+| loginHead			| Çekirdek			|						|
+| loginBodyBegin		| Çekirdek			|					|
+| loginBodyEnd			| Çekirdek			|					|
 
 <div class="note">
-<div class="title">Note</div>
-Not all the themes support the hooks for themes.
+<div class="title">Not</div>
+Tüm temalar, temalar için kancaları desteklemez.
 </div>
