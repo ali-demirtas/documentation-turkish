@@ -1,60 +1,60 @@
-# Title: Folder structure
+# Title: Klasör yapısı
 <!-- Position: 2 -->
 ---
-Folder structure of Bludit.
+Bludit'in klasör yapısı.
 ```
-/bl-content/	<-- Databases and uploaded images
-/bl-kernel/		<-- Core of Bludit
-/bl-languages/	<-- Languages files
-/bl-plugins/	<-- Plugins
-/bl-themes/		<-- Themes
+/bl-content/	<-- Veritabanları ve yüklenen resimler
+/bl-kernel/	<-- Bludit'in çekirdeği
+/bl-languages/	<-- Dil dosyaları
+/bl-plugins/	<-- Eklentiler
+/bl-themes/	<-- Temalar
 ```
 
 ## bl-content
-This folder is very important, it is where Bludit stores all files, as well as databases and images. Before making some update it's highly recommended to make a backup of this folder.
+Bu klasör çok önemlidir, Bludit tüm dosyalarının yanı sıra veritabanlarını ve görüntüleri burada saklar. Bir güncelleme yapmadan önce, bu klasörün bir yedeğini almanız önerilir.
 
 ```
 /bl-content/
 
 	databases/
-		plugins/		<-- Database: plugins
-		pages.php		<-- Database: pages
-		security.php	<-- Database: black list, brute force protection, others
-		site.php		<-- Database: site variables, name, description, slogan, others
-		tags.php		<-- Database: tags
-		users.php		<-- Database: users
+		plugins/		<-- Veritabanı: eklentiler
+		pages.php		<-- Veritabanı: sayfalar
+		security.php	        <-- Veritabanı: kara liste, kaba kuvvet koruması, diğerleri
+		site.php		<-- Veritabanı: site değişkenleri, isim, açıklama, slogan, diğerleri
+		tags.php		<-- Veritabanı: etiketler
+		users.php		<-- Veritabanı: kullanıcılar
 
-	pages/				<-- Content: pages
+	pages/				<-- İçerik: sayfalar
 		about/index.txt
 		food/index.txt
 
-	tmp/				<-- Temp files
-
-	uploads/			<-- Uploaded files
-		profiles/		<-- Profiles images
-		thumbnails/		<-- Thumbnails images
+	tmp/				<-- Geçici dosyalar
+	uploads/			<-- Yüklenen dosyalar
+		profiles/		<-- Profil resimleri
+		thumbnails/		<-- Küçük resimler
 		photo1.jpg
 		photo2.png
 ```
 
 ## bl-kernel
-This folder contains the core of Bludit.
+Bu klasör Bludit'in çekirdeğini içerir.
 
 ## bl-languages
-This folder contains all language files, each file is a JSON document, encoded in UTF-8.
+Bu klasör tüm dil dosyalarını içerir, her dosya UTF-8 olarak kodlanmış bir JSON belgesidir.
 
 ```
 /bl-languages/
 	bg_BG.json
 	cs_CZ.json
 	de_CH.json
+	tr_TR.json
 	en.json
 	es.json
 	...
 ```
 
 ## bl-plugins
-This folder contains all plugins, you can download new plugins and upload here.
+Bu klasör tüm eklentileri içerir, yeni eklentileri indirebilir ve buraya yükleyebilirsiniz.
 
 ```
 /bl-plugins/
@@ -67,7 +67,7 @@ This folder contains all plugins, you can download new plugins and upload here.
 ```
 
 ## bl-themes
-This folder contains all themes, you can download new themes and upload here.
+Bu klasör tüm temaları içerir, yeni temalar indirebilir ve buraya yükleyebilirsiniz.
 
 ```
 /bl-themes/
