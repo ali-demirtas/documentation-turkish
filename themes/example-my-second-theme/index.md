@@ -152,7 +152,9 @@ Site için eklenti kancaları:
 ```
 
 <h2 id="site-title-and-slogan">7. Site başlığı ve sloganı</h2>
+
 Başlık ve sloganı almak için Site-Object kullanabilirsiniz.
+
 ```
 <!DOCTYPE html>
 <html>
@@ -181,10 +183,11 @@ Başlık ve sloganı almak için Site-Object kullanabilirsiniz.
 </html>
 ```
 
-<h2 id="where-am-i">8. Where Am I</h2>
-Now let's work with the content of the site.
+<h2 id="where-am-i">8. Neredeyim</h2>
 
-To locate what page the user is browsing on the site use the variable `$WHERE_AM_I`. For example, if the user is watching a page the value of the variable has the string `page`, and if the user is watching the main page (home page) the value of the variable is going to be `home`.
+Şimdi sitenin içeriği ile çalışalım.
+
+Kullanıcının sitede hangi sayfada gezindiğini bulmak için `$WHERE_AM_I` değişkenini kullanın. Örneğin, kullanıcı bir sayfa izliyorsa, değişkenin değeri `page`, dizgesine sahiptir ve kullanıcı ana sayfayı (ana sayfa) izliyorsa değişkenin değeri `home` olacaktır.
 
 ```
 <!DOCTYPE html>
@@ -198,32 +201,33 @@ To locate what page the user is browsing on the site use the variable `$WHERE_AM
 	<!-- Javascript -->
 	<?php echo Theme::javascript('js/jquery.min.js') ?>
 
-	<!-- Load plugins with the hook siteHead -->
+	<!-- Kancalı eklentileri yükle siteHead -->
 	<?php Theme::plugins('siteHead') ?>
 </head>
 <body>
-	<!-- Load plugins with the hook siteBodyBegin -->
+	<!-- Kancalı eklentileri yükle siteBodyBegin -->
 	<?php Theme::plugins('siteBodyBegin') ?>
 
 	<h1><?php echo $site->title() ?></h1>
 	<h2><?php echo $site->slogan() ?></h2>
 
 	<?php if ($WHERE_AM_I=='page'): ?>
-	<p>The user is watching a particular page</p>
+	<p>Kullanıcı belirli bir sayfayı izliyor</p>
 
 	<?php elseif ($WHERE_AM_I=='home'): ?>
-	<p>The user is watching the homepage</p>
+	<p>Kullanıcı ana sayfayı izliyor</p>
 
 	<?php endif ?>
 
-	<!-- Load plugins with the hook siteBodyBegin -->
+	<!-- Kancalı eklentileri yükle siteBodyBegin -->
 	<?php Theme::plugins('siteBodyEnd') ?>
 </body>
 </html>
 ```
 
-<h2 id="main-content">9. Main Content</h2>
-If the user is in the home page, Bludit generates a global array `$pages` with all the published pages, each page is a `Page Object`.
+<h2 id="main-content">9. Ana içerik</h2>
+
+Kullanıcı ana sayfada ise, Bludit yayınlanmış tüm sayfalarda global bir dizi `$pages` üretir, her sayfa bir `Page Object` nesnesidir.
 
 ```
 <!DOCTYPE html>
@@ -237,18 +241,18 @@ If the user is in the home page, Bludit generates a global array `$pages` with a
 	<!-- Javascript -->
 	<?php echo Theme::javascript('js/jquery.min.js') ?>
 
-	<!-- Load plugins with the hook siteHead -->
+	<!-- Kancalı eklentileri yükle siteHead -->
 	<?php Theme::plugins('siteHead') ?>
 </head>
 <body>
-	<!-- Load plugins with the hook siteBodyBegin -->
+	<!-- Kancalı eklentileri yükle siteBodyBegin -->
 	<?php Theme::plugins('siteBodyBegin') ?>
 
 	<h1><?php echo $site->title() ?></h1>
 	<h2><?php echo $site->slogan() ?></h2>
 
 	<?php if ($WHERE_AM_I=='page'): ?>
-	<p>The user is watching a particular page</p>
+	<p>Kullanıcı belirli bir sayfayı izliyor</p>
 
 	<?php elseif ($WHERE_AM_I=='home'): ?>
 		<?php foreach ($pages as $page): ?>
@@ -257,7 +261,7 @@ If the user is in the home page, Bludit generates a global array `$pages` with a
 
 	<?php endif ?>
 
-	<!-- Load plugins with the hook siteBodyBegin -->
+	<!-- Kancalı eklentileri yükle siteBodyBegin -->
 	<?php Theme::plugins('siteBodyEnd') ?>
 </body>
 </html>
