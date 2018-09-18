@@ -1,26 +1,26 @@
-# Title: Tags
+# Title: Etiketler
 <!-- Position: 6 -->
 ---
-Snippet code to work with tags.
+Etiketlerle çalışmak için kod parçacıkları.
 
 <div class="note">
-The following codes work in Bludit > v2.1
+Bu kodlar Bludit > v2.1'de çalışır.
 </div>
 
 <div class="note">
-By default, the database of tags is alphanumeric sorted.
+Varsayılan olarak, etiketlerin veritabanı alfasayısal olarak sıralanır.
 </div>
 
-## List all tags
+## Tüm etiketleri listele
 ```
 <?php
 	$tags = getTags();
 
 	foreach ($tags as $tag) {
-		echo 'Tag name: '	. $tag->name();
-		echo 'Tag key: ' 	. $tag->key();
-		echo 'Tag link: ' 	. $tag->permalink();
-		echo 'Tag amount of pages: ' . count($tag->pages());
+		echo 'Etiket adı: '	. $tag->name();
+		echo 'Etiket anahtarı: ' . $tag->key();
+		echo 'Etiket bağlantısı: ' . $tag->permalink();
+		echo 'Sayfaların miktarını etiketle: ' . count($tag->pages());
 	}
 ?>
 ```
