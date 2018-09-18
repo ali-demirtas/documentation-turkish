@@ -1,15 +1,15 @@
-# Title: Content > Static Pages
+# Title: İçerik > Sabit Sayfalar
 <!-- Position: 4 -->
 ---
-Bludit has two types of content, **pages** and **static pages**.
+Bludit'in iki tür içeriği vardır, **sayfalar** ve **sabit sayfalar**.
 
-- **Pages** are ordered by the settings defined on **Settings > Advanced > Order by**, by default is by date.
-- **Static pages** are ordered by position all the time.
+- **Sayfalar**, **Ayarlar > Gelişmiş > Sırala** ile tanımlanmış ayarlara göre sıralanır,  varsayılan olarak tarihe göre sıralanmıştır.
+- **Sabit sayfalar** her zaman pozisyona göre sıralanır.
 
-In this section, we are going to show some snippet code to work with **static pages**.
+Bu bölümde, **sabit sayfalar** ile çalışmak için bazı kod parçacıkları göstereceğiz.
 
-## Show all the static pages
-The easy way is using the function `buildStaticPages()`
+## Tüm sabit sayfaları göster
+Kolay yolu işlevi kullanıyor `buildStaticPages()`
 
 ```
 <?php
